@@ -5,13 +5,13 @@ import {
   Container,
   Heading,
   Highlight,
-  HStack,
+  Stack,
   Text,
 } from '@chakra-ui/react'
 
 export default function Hero() {
   return (
-    <Box paddingTop={10}>
+    <Box paddingTop={[20, 16, 10]}>
       <Container>
         <Text align='right'>
           Abortion is legal in New Mexico.
@@ -24,14 +24,14 @@ export default function Hero() {
           We provide abortion care in all stages of pregnancy
           </Highlight>
         </Heading>
-        <HStack>
+        <Stack direction={['column', 'row']}>
           <Button>
             Call 555-555-5555
           </Button>
           <Text>
             If you're seeking abortion care or assistance, we can help.
           </Text>
-        </HStack>
+        </Stack>
       </Container>
     </Box>
   )

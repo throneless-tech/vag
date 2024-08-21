@@ -15,6 +15,7 @@ import {
   List,
   ListItem,
   SimpleGrid,
+  Stack,
   Text
 } from '@chakra-ui/react'
 import { Link } from '@chakra-ui/next-js'
@@ -71,14 +72,14 @@ export default function Home() {
                 Are you in or are you able to travel to New Mexico?
               </ListItem>
             </List>
-            <HStack>
+            <Stack direction={['column', 'row']}>
               <Button>
                 Call 555-555-5555
               </Button>
               <Text as='b'>
                 8 a.m. to 5 p.m. (MDT), Monday through Friday.
               </Text>
-            </HStack>
+            </Stack>
           </Container>
           <Container>
             <Heading as='h2'>
