@@ -15,13 +15,6 @@ const Button = defineStyleConfig({
         bg: 'red.500',
       }
     },
-    'quick-exit': {
-      bg: 'teal.100',
-      color: 'brown',
-      _hover: {
-        bg: 'teal.200',
-      }
-    },
     red: {
       bg: 'red.100',
       color: 'white',
@@ -88,6 +81,7 @@ export const theme = extendTheme({
       },
       body: {
         color: 'brown',
+        fontSize: 24,
       },
       h2: {
         fontSize: [48, 72],
