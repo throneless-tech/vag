@@ -25,7 +25,7 @@ export default function Header() {
         templateColumns='repeat(12, 1fr)'
         gap={0}
       >
-        <GridItem colSpan={[6, 3]}>
+        <GridItem colSpan={[8, 3]} paddingX={4} paddingY={2}>
           <VisuallyHidden>
           <Heading as='h1'>
             VAG Clinic
@@ -33,11 +33,21 @@ export default function Header() {
           </VisuallyHidden>
           <LogoNameIcon height='40px' width='137px' />
         </GridItem>
-        <GridItem colSpan={[6, 3]}>
-            <Text as='b'>
+        <GridItem colSpan={[4, 3]}>
+            <Text
+              as='b'
+              color='white'
+              fontSize={[16, 18]}
+              fontWeight='700'
+            >
               Call 555-555-5555
             </Text>
-            <Text as='span'>
+            <Text
+              as='span'
+              color='white'
+              fontSize={[16, 18]}
+              fontWeight={'400'}
+            >
               {' '}for support
             </Text>
         </GridItem>
