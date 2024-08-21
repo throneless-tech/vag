@@ -12,7 +12,7 @@ import {
 
 export default function Hero() {
   return (
-    <Box bg='yellow' paddingBottom={[8, 16]} paddingTop={['140px', 20, 16]}>
+    <Box bg='yellow' paddingBottom={[8, 16]} paddingTop={['170px', 20, 16]}>
       <Container maxW='4xl'>
         <Text
           align={['center', 'right']}

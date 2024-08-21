@@ -23,7 +23,7 @@ export default function CTA() {
           Abortion is legal in many states; find out information for your state or a state near you.
         </Text>
         <Center>
-          <Button width={[196]}>
+          <Button width={[226, 270]}>
             View access map
           </Button>
         </Center>

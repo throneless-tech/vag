@@ -13,6 +13,7 @@ import {
   Highlight,
   HStack,
   List,
+  ListIcon,
   ListItem,
   SimpleGrid,
   Stack,
@@ -39,36 +40,51 @@ export default function Home() {
       <main>
         <Hero />
         <CTA />
-        <Box>
-          <Container>
+        <Box bg='red.500'>
+          <Container color='white' paddingY={6}>
             <Heading as='h2'>
               Set up an Appointment
             </Heading>
-            <Text>
+            <Text paddingTop={4}>
               To maintain your privacy, we are only scheduling appointmentsby phone.
               <Text as='b'> Call or text 555-555-5555 8 a.m. to 5 p.m. (MDT), Monday through Friday.
               </Text>
             </Text>
-            <Heading as='h3'>
+            <Heading as='h3' paddingTop={8} variant='h3'>
               What to know when you call
             </Heading>
-            <List>
-              <ListItem>
+            <List color='brown' styleType='decimal'>
+              <ListItem
+                bg='pink'
+                marginTop={4}
+                paddingX={6}
+                paddingY={2}
+              >
                 <Text>
                   What was the the first day of your last menstrual period? or how many weeks pregnant you are according to an ultrasound (if you have had one)?
                 </Text>
                 <Text>
                   Need Help? Try this{' '}
-                  <Link href='#' color='blue.400' textDecoration='underline' _hover={{ color: 'blue.500' }}>
+                  <Link href='#' textDecoration='underline' _hover={{ color: 'blue.500' }}>
                     Pregnancy Calculator
                   </Link>
                   .
                 </Text>
               </ListItem>
-              <ListItem>
+              <ListItem
+                bg='pink'
+                marginTop={4}
+                paddingX={6}
+                paddingY={2}
+              >
                 VAG can help coordinate funds and travel for your abortion.
               </ListItem>
-              <ListItem>
+              <ListItem
+                bg='pink'
+                marginTop={4}
+                paddingX={6}
+                paddingY={2}
+              >
                 Are you in or are you able to travel to New Mexico?
               </ListItem>
             </List>
@@ -81,6 +97,8 @@ export default function Home() {
               </Text>
             </Stack>
           </Container>
+          </Box>
+          <Box>
           <Container>
             <Heading as='h2'>
               Should you come to VAG Clinic?
@@ -135,6 +153,8 @@ export default function Home() {
               </Card>
             </SimpleGrid>
           </Container>
+          </Box>
+          <Box>
           <Container>
             <Heading as='h2'>
               Other Abortion Resources
@@ -187,6 +207,8 @@ export default function Home() {
               </Card>
             </SimpleGrid>
           </Container>
+          </Box>
+          <Box>
           <Container>
             <Heading as='h2'>
               Who is VAG?
@@ -201,6 +223,8 @@ export default function Home() {
               VAG providers care for patients using an anti-racist, survivor-centered and low-intervention delivery model that midwives have used for thousands of years. Lived experience, as well as  scientific evidence, inform our organizational structures, policies, practices, and attitudes, so that power is shared equitably, within our organization as well as with those we serve.
             </Text>
           </Container>
+          </Box>
+          <Box>
           <Container>
             <Heading as='h2'>
               Help us help folks

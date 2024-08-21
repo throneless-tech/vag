@@ -1,4 +1,11 @@
-import { defineStyleConfig, extendTheme, Heading } from "@chakra-ui/react";
+import { defineStyleConfig, extendTheme } from "@chakra-ui/react";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  weight: ['400', '500', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 const Button = defineStyleConfig({
   baseStyle: {
@@ -41,6 +48,14 @@ const Button = defineStyleConfig({
   }
 })
 
+const Heading = defineStyleConfig({
+  variants: {
+    h3: {
+      fontFamily: poppins,
+    }
+  }
+})
+
 export const theme = extendTheme({
   colors: {
     brown: '#3F0909',
@@ -66,6 +81,7 @@ export const theme = extendTheme({
   },
   components: {
     Button,
+    Heading,
   },
   fonts: {
     body: "'Poppins', system-ui, sans-serif",
@@ -88,8 +104,10 @@ export const theme = extendTheme({
         fontWeight: 700,
         lineHeight: ['120%', '123%']
       },
-      heading: {
-        color: 'brown',
+      h3: {
+        fontSize: 32,
+        fontWeight: 700,
+        lineHeight: '120%',
       },
       highlight: {
         color: 'brown',
