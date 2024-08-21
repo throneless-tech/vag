@@ -18,14 +18,16 @@ export default function Header() {
       aria-label='Navigation'
       as='nav'
       backgroundColor='#3F0909'
+      boxShadow='0px 4px 6px 0px rgba(0, 0, 0, 0.25)'
       position='fixed' width='100%'
       zIndex={100}
     >
       <Grid
+        alignItems='center'
         templateColumns='repeat(12, 1fr)'
         gap={0}
       >
-        <GridItem colSpan={[8, 3]} paddingX={4} paddingY={2}>
+        <GridItem colSpan={[7, 4, 2]} paddingX={4} paddingY={2}>
           <VisuallyHidden>
           <Heading as='h1'>
             VAG Clinic
@@ -33,7 +35,7 @@ export default function Header() {
           </VisuallyHidden>
           <LogoNameIcon height='40px' width='137px' />
         </GridItem>
-        <GridItem colSpan={[4, 3]}>
+        <GridItem colSpan={[5, 6, 8]}>
             <Text
               as='b'
               color='white'
@@ -51,8 +53,15 @@ export default function Header() {
               {' '}for support
             </Text>
         </GridItem>
-        <GridItem colSpan={[12, 4]}>
-          <Button variant='quick-exit' width={['100%', '132px']}>
+        <GridItem colSpan={[12, 2, 2]}>
+          <Button
+            as='a'
+            href='https://weather.com'
+            variant='quick-exit'
+            height='100%'
+            paddingY={[2, '16px']}
+            width='100%'
+          >
             Quick Exit
           </Button>
         </GridItem>

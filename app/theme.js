@@ -74,6 +74,10 @@ export const theme = extendTheme({
   components: {
     Button,
   },
+  fonts: {
+    body: "'Poppins', system-ui, sans-serif",
+    heading: 'serif',
+  },
   styles: {
     global: {
       a: {
@@ -84,6 +88,11 @@ export const theme = extendTheme({
       },
       body: {
         color: 'brown',
+      },
+      h2: {
+        fontSize: [48, 72],
+        fontWeight: 700,
+        lineHeight: ['120%', '123%']
       },
       heading: {
         color: 'brown',

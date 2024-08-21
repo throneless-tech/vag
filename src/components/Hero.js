@@ -2,6 +2,7 @@
 import {
   Box,
   Button,
+  Center,
   Container,
   Heading,
   Highlight,
@@ -11,9 +12,15 @@ import {
 
 export default function Hero() {
   return (
-    <Box paddingTop={[20, 16, 10]}>
-      <Container>
-        <Text align='right'>
+    <Box bg='yellow' paddingBottom={[8, 16]} paddingTop={['140px', 20, 16]}>
+      <Container maxW='4xl'>
+        <Text
+          align={['center', 'right']}
+          color='red.200'
+          fontSize={[20, 24]}
+          fontWeight={700}
+          marginBottom={8}
+        >
           Abortion is legal in New Mexico.
         </Text>
         <Heading as='h2'>
@@ -24,11 +31,17 @@ export default function Hero() {
           We provide abortion care in all stages of pregnancy
           </Highlight>
         </Heading>
-        <Stack direction={['column', 'row']}>
-          <Button>
+        <Stack direction={['column', 'row']} gap={6} marginTop={6}>
+          <Center>
+          <Button width={270}>
             Call 555-555-5555
           </Button>
-          <Text>
+          </Center>
+          <Text
+            fontSize={24}
+            fontWeight={700}
+            lineHeight='150%'
+          >
             If you're seeking abortion care or assistance, we can help.
           </Text>
         </Stack>
