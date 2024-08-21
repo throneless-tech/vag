@@ -52,7 +52,7 @@ export default function Header() {
             </Text>
         </GridItem>
         <GridItem colSpan={[12, 4]}>
-          <Button>
+          <Button variant='quick-exit' width={['100%', '132px']}>
             Quick Exit
           </Button>
         </GridItem>
