@@ -44,7 +44,7 @@ export default function Hero() {
             fontWeight={700}
             lineHeight='150%'
           >
-            If you're seeking abortion care or assistance, we can help.
+            If you&apos;re seeking abortion care or assistance, we can help.
           </Text>
         </Stack>
       </Container>

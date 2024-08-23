@@ -50,7 +50,7 @@ export default function Footer() {
               We’ve designed our website to protect your privacy by [doing something awesome].
             </Text>
             <Text marginTop={2}>
-              We recommend you remove this site from your browser history and in the future use "incognito" or "private" browsing to look up information.
+              We recommend you remove this site from your browser history and in the future use &quot;incognito&quot; or &quot;private&quot; browsing to look up information.
             </Text>
             <Text marginTop={2}>
               To clear your browsing history in Google Chrome on Android, iPhone, or iPad, tap the three-dot menu icon &gt; Settings &gt; Privacy &gt; Clear Browsing Data.
