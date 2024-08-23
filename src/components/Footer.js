@@ -1,7 +1,9 @@
 // Chakra UI imports
 import LogoFooter from '@/public/LogoFooter'
+import { Link } from '@chakra-ui/next-js'
 import {
   Box,
+  Center,
   Container,
   Divider,
   Flex,
@@ -13,12 +15,12 @@ import {
 
 export default function Footer() {
   return (
-    <Box>
-      <Container>
-        <Flex direction={['column', 'row']}>
-          <Stack direction={['column', 'row-reverse']}>
-            <Box>
-              <Text as='b'>Contact us</Text>
+    <Box bg='brown' color='white'>
+      <Container paddingY={6}>
+        <Stack direction={['column', 'row']} spacing={6}>
+          <Stack direction={['column', 'row-reverse']} spacing={4} >
+            <Box fontSize={14} textAlign={['center', 'right']}>
+              <Text as='b' fontSize={18}>Contact us</Text>
               <Text>VAG Clinic</Text>
               <Text>
                 Albuquerque, NM 87125
@@ -31,38 +33,67 @@ export default function Footer() {
                 Local: 555-555-5555
               </Text>
               <br />
-              <Text as='b'>
+              <Text as='b' fontSize={18}>
                 Follow us
               </Text>
-              <HStack>
+              <HStack justifyContent='center'>
                 <Text>@valleyabortiongroup</Text>
               </HStack>
             </Box>
-            <LogoFooter />
+            <Center marginTop={6}>
+              <LogoFooter height={245} width={211} />
+            </Center>
           </Stack>
           <Spacer />
-          <Box>
+          <Box fontSize={14} marginTop={[0, 6]}>
             <Text>
               We’ve designed our website to protect your privacy by [doing something awesome].
             </Text>
-            <Text>
+            <Text marginTop={2}>
               We recommend you remove this site from your browser history and in the future use "incognito" or "private" browsing to look up information.
             </Text>
-            <Text>
-              To clear your browsing history in Google Chrome on Android, iPhone, or iPad, tap the three-dot menu icon {`&gt;`} Settings {`&gt;`} Privacy {`&gt;`} Clear Browsing Data.
+            <Text marginTop={2}>
+              To clear your browsing history in Google Chrome on Android, iPhone, or iPad, tap the three-dot menu icon &gt; Settings &gt; Privacy &gt; Clear Browsing Data.
             </Text>
           </Box>
-        </Flex>
-        <Divider />
-        <Flex direction={['column', 'row']}>
-          <Text as='b'>
-            Call 555-555-5555 for abortion support
-          </Text>
+        </Stack>
+        <Box>
+          <Box marginTop={4}>
+            <Divider />
+            <Stack alignItems='center' direction={['column', 'row']} justifyContent='center'>
+              <Text as='b'>
+                Call 555-555-5555{' '}
+              </Text>
+              <Text as='span'>
+                for abortion support
+              </Text>
+            </Stack>
+            <Divider />
+          </Box>
           <Spacer />
-          <Text>
-            Website built in collaboration with Throneless Tech and Design Choice
+          <Text
+            color='tan.100'
+            fontSize={12}
+            marginTop={4}
+            textAlign='center'
+          >
+            Website built in collaboration with{' '}
+            <Link
+              color='tan.100 !important'
+              href='https://throneless.tech'
+              textDecoration='underline'
+            >
+            Throneless Tech
+            </Link>{' '}and{' '}
+            <Link
+              color='tan.100 !important'
+              href='https://www.designchoice.studio/'
+              textDecoration='underline'
+            >
+            Design Choice
+            </Link>
           </Text>
-        </Flex>
+        </Box>
       </Container>
     </Box>
   )

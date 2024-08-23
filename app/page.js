@@ -131,7 +131,7 @@ export default function Home() {
             <Heading as='h2' marginTop={6} textAlign={['center', 'right']}>
               We provide
             </Heading>
-            <SimpleGrid columns={3} marginTop={4} spacing={4}>
+            <SimpleGrid columns={[1, 2, 3]} marginTop={4} spacing={4}>
               <CardServices title='In Clinic Abortions' body='upiditate non provident, similique sunt in culpa qui officia deserunt mollitia.' />
               <CardServices title='Spiritual Services' body='upiditate non provident, similique sunt in culpa qui officia deserunt mollitia.' />
               <CardServices title='Grief Counseling' body='upiditate non provident, similique sunt in culpa qui officia deserunt mollitia.' />
@@ -143,7 +143,7 @@ export default function Home() {
             <Heading as='h2'>
               Other Abortion Resources
             </Heading>
-            <SimpleGrid columns={3} marginTop={4} spacing={4}>
+            <SimpleGrid columns={[1, 2, 3]} marginTop={4} spacing={4}>
               <CardResources
                 body='ineedana.com is a comprehensive, regularly updated, and personalized resource for abortion seekers in the US.'
                 href='https://www.ineedana.com/'
