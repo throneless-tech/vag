@@ -33,6 +33,7 @@ import Footer from '@/src/components/Footer';
 
 import styles from "./page.module.css";
 import CardServices from '@/src/components/CardServices';
+import CardResources from '@/src/components/CardResources';
 
 export default function Home() {
   return (
@@ -94,18 +95,21 @@ export default function Home() {
               </ListItem>
             </List>
             <Stack direction={['column', 'row']} marginTop={8}>
-              <Center>
-              <Button variant='tan' width={269}>
+              <Button
+                marginLeft={['auto', 0]}
+                marginRight={['auto', 0]}
+                variant='tan'
+                width={269}
+              >
                 Call 555-555-5555
               </Button>
-              </Center>
               <Text as='b' marginTop={2} textAlign='center'>
                 8 a.m. to 5 p.m. (MDT), Monday through Friday.
               </Text>
             </Stack>
           </Container>
-          </Box>
-          <Box>
+        </Box>
+        <Box>
           <Container paddingY={6}>
             <Heading as='h2'>
               Should you come to VAG Clinic?
@@ -127,92 +131,65 @@ export default function Home() {
             <Heading as='h2' marginTop={6} textAlign={['center', 'right']}>
               We provide
             </Heading>
-            <SimpleGrid spacing={4} marginTop={4} templateColumns='repeat(auto-fill, minmax(200px, 1fr))'>
+            <SimpleGrid columns={3} marginTop={4} spacing={4}>
               <CardServices title='In Clinic Abortions' body='upiditate non provident, similique sunt in culpa qui officia deserunt mollitia.' />
               <CardServices title='Spiritual Services' body='upiditate non provident, similique sunt in culpa qui officia deserunt mollitia.' />
               <CardServices title='Grief Counseling' body='upiditate non provident, similique sunt in culpa qui officia deserunt mollitia.' />
             </SimpleGrid>
           </Container>
-          </Box>
-          <Box bg='pink'>
+        </Box>
+        <Box bg='pink'>
           <Container paddingY={6}>
             <Heading as='h2'>
               Other Abortion Resources
             </Heading>
-            <SimpleGrid spacing={4} templateColumns='repeat(auto-fill, minmax(200px, 1fr))'>
-              <Card>
-                <CardHeader>
-                  <Heading as='h3'>
-                    Find abortion support near you
-                  </Heading>
-                </CardHeader>
-                <CardBody>
-                  ineedana.com is a comprehensive, regularly updated, and personalized resource for abortion seekers in the US
-                </CardBody>
-                <CardFooter>
-                  <Button>
-                    Go to ineedana.com
-                  </Button>
-                </CardFooter>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <Heading as='h3'>
-                    Find an abortion fund
-                  </Heading>
-                </CardHeader>
-                <CardBody>
-                  The National Network of Abortion Funds (NNAF)is a network of 100 independent abortion funds. These member funds work to remove financial and logistical barriers to abortion access.
-                </CardBody>
-                <CardFooter>
-                  <Button>
-                    Go to NNAF
-                  </Button>
-                </CardFooter>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <Heading as='h3'>
-                    Find out about abortion laws in your state
-                  </Heading>
-                </CardHeader>
-                <CardBody>
-                  [explanation about resource]
-                </CardBody>
-                <CardFooter>
-                  <Button>
-                    View State Laws
-                  </Button>
-                </CardFooter>
-              </Card>
+            <SimpleGrid columns={3} marginTop={4} spacing={4}>
+              <CardResources
+                body='ineedana.com is a comprehensive, regularly updated, and personalized resource for abortion seekers in the US.'
+                href='https://www.ineedana.com/'
+                linkText='Go to ineedana.com'
+                title='Find abortion support near you'
+              />
+              <CardResources
+                body='The National Network of Abortion Funds (NNAF)is a network of 100 independent abortion funds. These member funds work to remove financial and logistical barriers to abortion access.'
+                href='https://abortionfunds.org/find-a-fund/'
+                linkText='Go to NNAF'
+                title='Find an abortion fund'
+              />
+              <CardResources
+                body='[explanation about resource]'
+                href='#FIXME'
+                linkText='View state laws'
+                title='Find out about abortion laws in your state'
+              />
             </SimpleGrid>
           </Container>
-          </Box>
-          <Box>
-          <Container>
+        </Box>
+        <Box>
+          <Container paddingY={6}>
             <Heading as='h2'>
               Who is VAG?
             </Heading>
-            <Text>
+            <Text marginTop={4}>
               We are a diverse group of abortion counselors and clinicians who came together to dismantle supremacy ideologies within health care while prioritizing support and accessibility needs for both patients and clinic staff.
             </Text>
-            <Text>
+            <Text marginTop={4}>
               Valley Abortion Group is the first Queer- and BIPOC-led, employee-directed abortion clinic focused on comprehensive abortion care. We are the fifth clinic in the country, and only clinic is the southwest, to provide abortion care in all stages of pregnancy.
             </Text>
-            <Text>
+            <Text marginTop={4}>
               VAG providers care for patients using an anti-racist, survivor-centered and low-intervention delivery model that midwives have used for thousands of years. Lived experience, as well as  scientific evidence, inform our organizational structures, policies, practices, and attitudes, so that power is shared equitably, within our organization as well as with those we serve.
             </Text>
           </Container>
-          </Box>
-          <Box>
-          <Container>
-            <Heading as='h2'>
+        </Box>
+        <Box bg='teal.100'>
+          <Container paddingY={6}>
+            <Heading as='h2' textAlign={['left', 'right']}>
               Help us help folks
             </Heading>
-            <Text>
+            <Text marginTop={4}>
               [why folks should donate] Eaque ipsa quae ab illo inventore veritatis et quasi. Inventore  veritatis et quasi architecto beatae vitae dicta sunt explicabo. Esse  cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in  reprehenderit in voluptate velit.
             </Text>
-            <Button>
+            <Button marginY={8} variant='brown'>
               Donate Now
             </Button>
           </Container>

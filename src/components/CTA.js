@@ -17,13 +17,15 @@ export default function CTA() {
           fontSize={16}
           fontWeight={700}
           lineHeight='28px'
+          minW={['100%', 400, 750, 900 ]}
           paddingX={3}
           paddingY={2}
+          width='100%'
         >
           Abortion is legal in many states; find out information for your state or a state near you.
         </Text>
-        <Center>
-          <Button width={[226, 270]}>
+        <Center width='100%'>
+          <Button height='100%' width='100%'>
             View access map
           </Button>
         </Center>

@@ -26,17 +26,19 @@ export default function Hero() {
         <Heading as='h2'>
           <Highlight
             query={['all sta', 'es' ]}
-            styles={{ textDecoration: 'underline'}}
+            styles={{ color: 'brown', textDecoration: 'underline'}}
           >
           We provide abortion care in all stages of pregnancy
           </Highlight>
         </Heading>
         <Stack direction={['column', 'row']} gap={6} marginTop={6}>
-          <Center>
-          <Button width={270}>
+          <Button
+            marginLeft={['auto', 0]}
+            marginRight={['auto', 0]}
+            width={270}
+          >
             Call 555-555-5555
           </Button>
-          </Center>
           <Text
             fontSize={24}
             fontWeight={700}
