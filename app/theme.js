@@ -72,6 +72,7 @@ export const theme = extendTheme({
       200: '#A85E44',
     },
     teal: {
+      50: '#4AACA6',
       100: '#22A39B',
       200: '#1D847D',
       300: '#125450',
@@ -97,7 +98,7 @@ export const theme = extendTheme({
       },
       body: {
         color: 'brown',
-        fontSize: 24,
+        fontSize: [18, 24],
       },
       h2: {
         fontSize: [48, 72],

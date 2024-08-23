@@ -1,5 +1,4 @@
 // Chakra UI imports
-import LogoNameIcon from '@/public/LogoNameIcon'
 import {
   Box,
   Button,
@@ -10,7 +9,10 @@ import {
   Spacer,
   Text,
   VisuallyHidden
-} from '@chakra-ui/react'
+} from '@chakra-ui/react';
+
+// icons
+import LogoNameIcon from '@/public/LogoNameIcon';
 
 export default function Header() {
   return (

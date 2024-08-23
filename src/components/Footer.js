@@ -1,4 +1,5 @@
 // Chakra UI imports
+import LogoFooter from '@/public/LogoFooter'
 import {
   Box,
   Container,
@@ -37,7 +38,7 @@ export default function Footer() {
                 <Text>@valleyabortiongroup</Text>
               </HStack>
             </Box>
-            <Text>Logo</Text>
+            <LogoFooter />
           </Stack>
           <Spacer />
           <Box>

@@ -8,6 +8,7 @@ import {
   CardBody,
   CardFooter,
   CardHeader,
+  Center,
   Container,
   Heading,
   Highlight,
@@ -30,7 +31,8 @@ import Hero from "@/src/components/Hero";
 import CTA from "@/src/components/CTA";
 import Footer from '@/src/components/Footer';
 
-// import styles from "./page.module.css";
+import styles from "./page.module.css";
+import CardServices from '@/src/components/CardServices';
 
 export default function Home() {
   return (
@@ -53,12 +55,13 @@ export default function Home() {
             <Heading as='h3' paddingTop={8} variant='h3'>
               What to know when you call
             </Heading>
-            <List color='brown' styleType='decimal'>
+            <List color='brown' className={styles.list}>
               <ListItem
                 bg='pink'
-                marginTop={4}
+                className={styles.listItem}
+                marginTop={[12, 4]}
                 paddingX={6}
-                paddingY={2}
+                paddingY={[6, 2]}
               >
                 <Text>
                   What was the the first day of your last menstrual period? or how many weeks pregnant you are according to an ultrasound (if you have had one)?
@@ -73,89 +76,66 @@ export default function Home() {
               </ListItem>
               <ListItem
                 bg='pink'
-                marginTop={4}
+                className={styles.listItem}
+                marginTop={[12, 4]}
                 paddingX={6}
-                paddingY={2}
+                paddingY={[6, 2]}
               >
                 VAG can help coordinate funds and travel for your abortion.
               </ListItem>
               <ListItem
                 bg='pink'
-                marginTop={4}
+                className={styles.listItem}
+                marginTop={[12, 4]}
                 paddingX={6}
-                paddingY={2}
+                paddingY={[6, 2]}
               >
                 Are you in or are you able to travel to New Mexico?
               </ListItem>
             </List>
-            <Stack direction={['column', 'row']}>
-              <Button>
+            <Stack direction={['column', 'row']} marginTop={8}>
+              <Center>
+              <Button variant='tan' width={269}>
                 Call 555-555-5555
               </Button>
-              <Text as='b'>
+              </Center>
+              <Text as='b' marginTop={2} textAlign='center'>
                 8 a.m. to 5 p.m. (MDT), Monday through Friday.
               </Text>
             </Stack>
           </Container>
           </Box>
           <Box>
-          <Container>
+          <Container paddingY={6}>
             <Heading as='h2'>
               Should you come to VAG Clinic?
             </Heading>
-            <Heading as='h3'>
+            <Heading as='h3' color='red.100' marginTop={2} variant='h3'>
               <Highlight
                 query={['Anyone who desires an abortio']}
-                styles={{ textDecoration: 'underline' }}
+                styles={{ color: 'red.100', textDecoration: 'underline', whiteSpace: 'wrap' }}
               >
                 Anyone who desires an abortion should call us. Period.
               </Highlight>
             </Heading>
-            <Text>
+            <Text marginTop={4}>
               We provide support and resources to folx having to cross borders due to abortion restrictions in order to receive care at VAG in Albuquerque, New Mexico, located on occupied Tiwa land.
             </Text>
-            <Text>
+            <Text marginTop={4}>
               Cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia. Itaque earum rerum hic tenetur a sapiente delectus. At vero eos et accusamus. Excepteur sint occaecat cupidatat non proident, sunt in culpa.
             </Text>
-            <Heading as='h2' textAlign='right'>
+            <Heading as='h2' marginTop={6} textAlign={['center', 'right']}>
               We provide
             </Heading>
-            <SimpleGrid spacing={4} templateColumns='repeat(auto-fill, minmax(200px, 1fr))'>
-              <Card>
-                <CardHeader>
-                  <Heading as='h3'>
-                    In Clinic Abortions
-                  </Heading>
-                </CardHeader>
-                <CardBody>
-                  upiditate non provident, similique sunt in culpa qui officia deserunt mollitia.
-                </CardBody>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <Heading as='h3'>
-                    Spiritual Services
-                  </Heading>
-                </CardHeader>
-                <CardBody>
-                  upiditate non provident, similique sunt in culpa qui officia deserunt mollitia.
-                </CardBody>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <Heading as='h3'>
-                    Grief Counseling
-                  </Heading>
-                </CardHeader>
-                <CardBody>
-                  upiditate non provident, similique sunt in culpa qui officia deserunt mollitia.
-                </CardBody>
-              </Card>
+            <SimpleGrid spacing={4} marginTop={4} templateColumns='repeat(auto-fill, minmax(200px, 1fr))'>
+              <CardServices title='In Clinic Abortions' body='upiditate non provident, similique sunt in culpa qui officia deserunt mollitia.' />
+              <CardServices title='Spiritual Services' body='upiditate non provident, similique sunt in culpa qui officia deserunt mollitia.' />
+              <CardServices title='Grief Counseling' body='upiditate non provident, similique sunt in culpa qui officia deserunt mollitia.' />
             </SimpleGrid>
           </Container>
           </Box>
-          <Box>
-          <Container>
+          <Box bg='pink'>
+          <Container paddingY={6}>
             <Heading as='h2'>
               Other Abortion Resources
             </Heading>
