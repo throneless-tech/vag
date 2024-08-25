@@ -82,7 +82,7 @@ export default function Header() {
               className={header.breathe}
               height={31}
               marginLeft={2}
-              src={'/icons/icon-flower@1.png'}
+              src='/icons/icon-flower@1.png'
               sx={{
                 right: ['30%', '10%']
               }}

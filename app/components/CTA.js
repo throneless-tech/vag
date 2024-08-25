@@ -9,7 +9,12 @@ import {
 
 export default function CTA() {
   return (
-    <Box bg={['teal.300', 'yellow']} padding={[4, 0]}>
+    <Box
+      bg={['teal.300', 'yellow']}
+      padding={[4, 0]}
+      position='relative'
+      zIndex={1}
+    >
       <Stack direction={['column', 'row']}>
         <Text
           bg='teal.300'
