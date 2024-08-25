@@ -26,14 +26,14 @@ import { Link } from '@chakra-ui/next-js'
 import Image from "next/image";
 
 // components
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import CTA from "@/components/CTA";
-import Footer from '@/components/Footer';
+import Header from "@/app/components/Header";
+import Hero from "@/app/components/Hero";
+import CTA from "@/app/components/CTA";
+import Footer from '@/app/components/Footer';
 
 import styles from "./page.module.css";
-import CardServices from '@/components/CardServices';
-import CardResources from '@/components/CardResources';
+import CardServices from '@/app/components/CardServices';
+import CardResources from '@/app/components/CardResources';
 
 export default function Home() {
   return (

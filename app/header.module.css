@@ -1,0 +1,25 @@
+.breathe {
+  animation: breathe 3s infinite;
+  position: absolute;
+}
+
+.breatheContainer {
+  position: relative;
+}
+
+@keyframes breathe {
+  0% {
+    height: 31px;
+    width: 35px;
+  }
+
+  50% {
+    height: 20px;
+    width: 30px;
+  }
+
+  100% {
+    height: 31px;
+    width: 35px;
+  }
+}

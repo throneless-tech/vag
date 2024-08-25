@@ -6,6 +6,7 @@ import {
   Grid,
   GridItem,
   Heading,
+  HStack,
   Spacer,
   Text,
   VisuallyHidden
@@ -13,6 +14,10 @@ import {
 
 // icons
 import LogoNameIcon from '@/public/LogoNameIcon';
+import { Image } from '@chakra-ui/next-js';
+
+// extra styles
+import header from '../header.module.css';
 
 export default function Header() {
   return (
@@ -29,7 +34,7 @@ export default function Header() {
         templateColumns='repeat(12, 1fr)'
         gap={0}
       >
-        <GridItem colSpan={[7, 4, 2]} paddingX={4} paddingY={2}>
+        <GridItem colSpan={[7, 4, 2]} paddingX={4} paddingY={2} gap={4}>
           <VisuallyHidden>
             <Heading as='h1'>
               VAG Clinic
@@ -37,7 +42,7 @@ export default function Header() {
           </VisuallyHidden>
           <LogoNameIcon height='40px' width='137px' />
         </GridItem>
-        <GridItem colSpan={[5, 6, 8]}>
+        <GridItem colSpan={[5, 5, 8]}>
           <Text
             as='b'
             color='white'
@@ -55,15 +60,34 @@ export default function Header() {
             {' '}for support
           </Text>
         </GridItem>
-        <GridItem colSpan={[12, 2, 2]}>
+        <GridItem colSpan={[12, 3, 2]}>
           <Button
             as='a'
             href='https://weather.com'
             height='100%'
             paddingY={[2, '16px']}
+            variant='solid'
             width='100%'
           >
-            Quick Exit
+            <Text
+              as='span'
+              className={header.breatheContainer}
+              sx={{
+                marginLeft: ['-20px', '-30px', '-40px']
+              }}
+            >
+              Quick Exit
+            </Text>
+            <Image
+              className={header.breathe}
+              height={31}
+              marginLeft={2}
+              src={'/icons/icon-flower@1.png'}
+              sx={{
+                right: ['30%', '10%']
+              }}
+              width={35}
+            />
           </Button>
         </GridItem>
       </Grid>
