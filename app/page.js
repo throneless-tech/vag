@@ -45,7 +45,7 @@ export default function Home() {
         <CTA />
         <Box bg='red.500'>
           <Container color='white' paddingY={6}>
-            <Heading as='h2'>
+            <Heading as='h2' variant='h2'>
               Set up an Appointment
             </Heading>
             <Text paddingTop={4}>
@@ -111,7 +111,7 @@ export default function Home() {
         </Box>
         <Box>
           <Container paddingY={6}>
-            <Heading as='h2'>
+            <Heading as='h2' variant='h2'>
               Should you come to VAG Clinic?
             </Heading>
             <Heading as='h3' color='red.100' marginTop={2} variant='h3'>
@@ -140,7 +140,7 @@ export default function Home() {
         </Box>
         <Box bg='pink'>
           <Container paddingY={6}>
-            <Heading as='h2'>
+            <Heading as='h2' variant='h2'>
               Other Abortion Resources
             </Heading>
             <SimpleGrid columns={[1, 2, 3]} marginTop={4} spacing={4}>
@@ -167,7 +167,7 @@ export default function Home() {
         </Box>
         <Box>
           <Container paddingY={6}>
-            <Heading as='h2'>
+            <Heading as='h2' variant='h2'>
               Who is VAG?
             </Heading>
             <Text marginTop={4}>

@@ -23,7 +23,7 @@ export default function Hero() {
         >
           Abortion is legal in New Mexico.
         </Text>
-        <Heading as='h2'>
+        <Heading as='h2' variant='h2'>
           <Highlight
             query={['all sta', 'es' ]}
             styles={{ color: 'brown', textDecoration: 'underline'}}

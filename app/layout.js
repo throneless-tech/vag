@@ -1,7 +1,11 @@
-import { Providers } from './providers';
+// Next font imports
 import { Poppins } from "next/font/google";
+
+// Styles
+import { Providers } from './providers';
 import "./globals.css";
 
+// configure Google font
 const poppins = Poppins({
   weight: ['400', '500', '700'],
   subsets: ['latin'],

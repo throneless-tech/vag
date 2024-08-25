@@ -49,9 +49,20 @@ const Button = defineStyleConfig({
 })
 
 const Heading = defineStyleConfig({
+  baseStyle: {
+    fontWeight: 700,
+  },
   variants: {
+    h2: {
+      fontSize: [48, 72, 72],
+      fontWeight: 700,
+      lineHeight: ['120%', '123%'],
+    },
     h3: {
       fontFamily: poppins,
+      fontSize: 32,
+      fontWeight: 700,
+      lineHeight: '120%',
     }
   }
 })
@@ -86,7 +97,7 @@ export const theme = extendTheme({
   },
   fonts: {
     body: "'Poppins', system-ui, sans-serif",
-    heading: 'serif',
+    heading: "'the-seasons', 'serif'",
   },
   styles: {
     global: {
@@ -99,16 +110,6 @@ export const theme = extendTheme({
       body: {
         color: 'brown',
         fontSize: [18, 24],
-      },
-      h2: {
-        fontSize: [48, 72],
-        fontWeight: 700,
-        lineHeight: ['120%', '123%']
-      },
-      h3: {
-        fontSize: 32,
-        fontWeight: 700,
-        lineHeight: '120%',
       },
       highlight: {
         color: 'brown',
