@@ -1,4 +1,5 @@
 // Chakra UI imports
+import { Image } from '@chakra-ui/next-js'
 import {
   Box,
   Button,
@@ -30,8 +31,16 @@ export default function CTA() {
           Abortion is legal in many states; find out information for your state or a state near you.
         </Text>
         <Center width='100%'>
-          <Button height='100%' width='100%'>
-            View access map
+          <Button height='100%' width={[270, '100%']} paddingY={[2, 0]}>
+            <Image
+              height={29}
+              paddingRight={1}
+              src='/icons/icon-swirl@1.png'
+              width={33}
+            />
+            <Text as='span'>
+              View access map
+            </Text>
           </Button>
         </Center>
       </Stack>

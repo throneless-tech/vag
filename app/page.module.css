@@ -11,22 +11,4 @@
   counter-increment: call-steps;
   font-size: 64px;
   font-weight: 700;
-  left: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateX(-120%) translateY(-50%);
-}
-
-@media screen and (max-width: 986px) {
-  .list>.listItem::before {
-    transform: translateX(-60%) translateY(-50%);
-  }
-}
-
-@media screen and (max-width: 599px) {
-  .list>.listItem::before {
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%) translateY(-60%);
-  }
 }

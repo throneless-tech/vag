@@ -4,26 +4,20 @@
 import {
   Box,
   Button,
-  Card,
-  CardBody,
-  CardFooter,
-  CardHeader,
   Center,
   Container,
   Heading,
+  Hide,
   Highlight,
-  HStack,
   List,
   ListIcon,
   ListItem,
+  Show,
   SimpleGrid,
   Stack,
   Text
 } from '@chakra-ui/react'
-import { Link } from '@chakra-ui/next-js'
-
-// NextJS imports
-import Image from "next/image";
+import { Image, Link } from '@chakra-ui/next-js'
 
 // components
 import Header from "@/app/components/Header";
@@ -43,16 +37,47 @@ export default function Home() {
       <main>
         <Hero />
         <CTA />
-        <Box bg='red.500'>
+        <Box bg='red.500' position='relative'>
+          <Box
+            marginLeft='auto'
+            marginRight={0}
+            position='absolute'
+            sx={{
+              right: 0,
+              top: 0,
+              transform: 'translateX(30%)',
+              zIndex: 0,
+            }}
+            // width={['86vw', '74vw', '60vw']}
+          >
+            <Image
+              height={434}
+              src='/section-02-appt/flower@1x.png'
+              sx={{
+                height: [200, 260, 374],
+                width: [200, 260, 374]
+              }}
+              width={374}
+            />
+          </Box>
           <Container color='white' paddingY={6}>
             <Heading as='h2' variant='h2'>
               Set up an Appointment
             </Heading>
-            <Text paddingTop={4}>
-              To maintain your privacy, we are only scheduling appointmentsby phone.
-              <Text as='b'> Call or text 555-555-5555 8 a.m. to 5 p.m. (MDT), Monday through Friday.
+            <Text paddingTop={4} maxWidth={[400, 600, 780]}>
+              To maintain your privacy, we are only scheduling appointments by phone.{' '}
+              <Text as='b'>Call or text 555-555-5555, 8 a.m. to 5 p.m. (MDT), Monday through Friday.
               </Text>
             </Text>
+            <Center marginTop={6}>
+              <Hide above='sm'>
+                <Image
+                  height={5}
+                  src='/icons/line@1x.png'
+                  width={300}
+                />
+              </Hide>
+            </Center>
             <Heading as='h3' paddingTop={8} variant='h3'>
               What to know when you call
             </Heading>
@@ -60,9 +85,24 @@ export default function Home() {
               <ListItem
                 bg='pink'
                 className={styles.listItem}
-                marginTop={[12, 4]}
-                paddingX={6}
-                paddingY={[6, 2]}
+                marginTop={[20, 20, 8]}
+                paddingX={[6, 8]}
+                paddingY={[6, 6, 2]}
+                sx={{
+                  position: 'relative',
+                  _before: {
+                    backgroundImage: 'url(/section-02-appt/dot@1x.png)',
+                    backgroundRepeat: 'no-repeat',
+                    content: '""',
+                    height: 95,
+                    left: ['50%', '50%', '-9%'],
+                    paddingLeft: 9,
+                    position: 'absolute',
+                    top: ['-40%', '-32%', '50%'],
+                    transform: ['translateX(-50%)', 'translateX(-50%)',  'translateY(-50%)'],
+                    width: 106,
+                  }
+                }}
               >
                 <Text>
                   What was the the first day of your last menstrual period? or how many weeks pregnant you are according to an ultrasound (if you have had one)?
@@ -78,30 +118,83 @@ export default function Home() {
               <ListItem
                 bg='pink'
                 className={styles.listItem}
-                marginTop={[12, 4]}
-                paddingX={6}
-                paddingY={[6, 2]}
+                marginTop={[20, 20, 8]}
+                paddingX={[6, 8]}
+                paddingY={[6, 6, 2]}
+                sx={{
+                  position: 'relative',
+                  _before: {
+                    backgroundImage: 'url(/section-02-appt/dot@1x.png)',
+                    backgroundRepeat: 'no-repeat',
+                    content: '""',
+                    height: 95,
+                    left: ['50%', '50%', '-9%'],
+                    paddingLeft: 7,
+                    position: 'absolute',
+                    top: ['-46%', '-46%', '50%'],
+                    transform: ['translateX(-50%)', 'translateX(-50%)', 'translateY(-50%)'],
+                    width: 106,
+                  }
+                }}
               >
-                VAG can help coordinate funds and travel for your abortion.
+                Do you need help with funding your care? VAG can help coordinate funds and travel for your abortion.
               </ListItem>
               <ListItem
                 bg='pink'
                 className={styles.listItem}
-                marginTop={[12, 4]}
-                paddingX={6}
-                paddingY={[6, 2]}
+                marginTop={[20, 20, 8]}
+                paddingX={[6, 8]}
+                paddingY={[6, 6, 2]}
+                sx={{
+                  position: 'relative',
+                  _before: {
+                    backgroundImage: 'url(/section-02-appt/dot@1x.png)',
+                    backgroundRepeat: 'no-repeat',
+                    content: '""',
+                    height: 95,
+                    left: ['50%', '50%', '-9%'],
+                    paddingLeft: 7,
+                    position: 'absolute',
+                    top: ['-56%', '-68%', '50%'],
+                    transform: ['translateX(-50%)', 'translateX(-50%)', 'translateY(-50%)'],
+                    width: 106,
+                  }
+                }}
               >
                 Are you in or are you able to travel to New Mexico?
               </ListItem>
             </List>
+            <Center marginTop={6}>
+              <Image
+                height={5}
+                src='/icons/line@1x.png'
+                width={300}
+              />
+              <Show above='sm'>
+                <Image
+                  height={5}
+                  marginLeft='-1px'
+                  src='/icons/line@1x.png'
+                  width={300}
+                />
+              </Show>
+            </Center>
             <Stack direction={['column', 'row']} marginTop={8}>
               <Button
                 marginLeft={['auto', 0]}
                 marginRight={['auto', 0]}
                 variant='tan'
-                width={269}
+                width={274}
               >
-                Call 555-555-5555
+                <Image
+                  height={26}
+                  src='/section-01-hero/icon-rainbow@1.png'
+                  paddingRight={1}
+                  width={36}
+                />
+                <Text as='span'>
+                  Call 555-555-5555
+                </Text>
               </Button>
               <Text as='b' marginTop={2} textAlign='center'>
                 8 a.m. to 5 p.m. (MDT), Monday through Friday.
