@@ -319,23 +319,36 @@ export default function Home() {
             </SimpleGrid>
           </Container>
         </Box>
-        <Box bg='pink'>
-          <Container paddingY={6}>
+        <Box
+          bg='pink'
+          backgroundImage='url("/section-04-resources/pattern@1x.jpg")'
+          backgroundRepeat='repeat'
+          >
+          <Container
+            maxW='4xl'
+            paddingY={6}
+          >
             <Heading as='h2' variant='h2'>
               Other Abortion Resources
             </Heading>
             <SimpleGrid columns={[1, 2, 3]} marginTop={4} spacing={4}>
               <CardResources
                 body='ineedana.com is a comprehensive, regularly updated, and personalized resource for abortion seekers in the US.'
+                height={81}
                 href='https://www.ineedana.com/'
+                icon="/section-04-resources/logo-ineeda@1x.png"
                 linkText='Go to ineedana.com'
                 title='Find abortion support near you'
+                width={196}
               />
               <CardResources
                 body='The National Network of Abortion Funds (NNAF)is a network of 100 independent abortion funds. These member funds work to remove financial and logistical barriers to abortion access.'
+                height={75}
                 href='https://abortionfunds.org/find-a-fund/'
+                icon="/section-04-resources/logo-nnaf@1x.png"
                 linkText='Go to NNAF'
                 title='Find an abortion fund'
+                width={277}
               />
               <CardResources
                 body='[explanation about resource]'
@@ -347,7 +360,7 @@ export default function Home() {
           </Container>
         </Box>
         <Box>
-          <Container paddingY={6}>
+          <Container maxW='4xl' paddingY={6}>
             <Heading as='h2' variant='h2'>
               Who is VAG?
             </Heading>
@@ -363,7 +376,7 @@ export default function Home() {
           </Container>
         </Box>
         <Box bg='teal.100'>
-          <Container paddingY={6}>
+          <Container maxW='4xl' paddingY={6}>
             <Heading as='h2' textAlign={['left', 'right']}>
               Help us help folks
             </Heading>

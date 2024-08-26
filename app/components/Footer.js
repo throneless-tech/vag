@@ -16,7 +16,7 @@ import {
 export default function Footer() {
   return (
     <Box bg='brown' color='white'>
-      <Container paddingY={6}>
+      <Container maxW='4xl' paddingY={6}>
         <Stack direction={['column', 'row']} spacing={6}>
           <Stack direction={['column', 'row-reverse']} spacing={4} >
             <Box fontSize={14} textAlign={['center', 'right']}>
