@@ -50,7 +50,6 @@ export default function Home() {
               transform: 'translateX(30%)',
               zIndex: 0,
             }}
-          // width={['86vw', '74vw', '60vw']}
           >
             <Image
               height={434}
@@ -270,16 +269,16 @@ export default function Home() {
               <GridItem colSpan={[0, 0, 7]}>
                 <Show above='md'>
                   <HStack spacing={0}>
-                  <Image
-                    height={4}
-                    src='/icons/line-teal@1x.png'
-                    width={320}
-                  />
-                  <Image
-                    height={4}
-                    src='/icons/line-teal@1x.png'
-                    width={320}
-                  />
+                    <Image
+                      height={4}
+                      src='/icons/line-teal@1x.png'
+                      width={320}
+                    />
+                    <Image
+                      height={4}
+                      src='/icons/line-teal@1x.png'
+                      width={320}
+                    />
                   </HStack>
                 </Show>
               </GridItem>
@@ -323,7 +322,9 @@ export default function Home() {
           bg='pink'
           backgroundImage='url("/section-04-resources/pattern@1x.jpg")'
           backgroundRepeat='repeat'
-          >
+          position='relative'
+          zIndex={1}
+        >
           <Container
             maxW='4xl'
             paddingY={6}
@@ -359,23 +360,96 @@ export default function Home() {
             </SimpleGrid>
           </Container>
         </Box>
-        <Box>
+        <Box position='relative'>
+          <Box
+            marginLeft='auto'
+            marginRight={0}
+            position='absolute'
+            sx={{
+              right: 0,
+              top: 0,
+              transform: 'translateX(55%) translateY(-30%)',
+              zIndex: 0,
+            }}
+          >
+            <Image
+              height={434}
+              src='/section-05-about/sun@1x.png'
+              sx={{
+                height: [170, 260, 284],
+                width: [192, 280, 320]
+              }}
+              width={374}
+            />
+          </Box>
+          <Show above='md'>
+            <Box
+              marginLeft='auto'
+              marginRight={0}
+              position='absolute'
+              sx={{
+                bottom: 0,
+                right: 0,
+                transform: 'translateX(16%) translateY(10%)',
+                zIndex: 0,
+              }}
+            >
+              <Image
+                height={434}
+                src='/section-05-about/cactus@1x.png'
+                sx={{
+                  height: [150, 250, 350],
+                  width: [100, 200, 300]
+                }}
+                width={374}
+              />
+            </Box>
+          </Show>
           <Container maxW='4xl' paddingY={6}>
             <Heading as='h2' variant='h2'>
               Who is VAG?
             </Heading>
-            <Text marginTop={4}>
-              We are a diverse group of abortion counselors and clinicians who came together to dismantle supremacy ideologies within health care while prioritizing support and accessibility needs for both patients and clinic staff.
-            </Text>
-            <Text marginTop={4}>
-              Valley Abortion Group is the first Queer- and BIPOC-led, employee-directed abortion clinic focused on comprehensive abortion care. We are the fifth clinic in the country, and only clinic is the southwest, to provide abortion care in all stages of pregnancy.
-            </Text>
-            <Text marginTop={4}>
-              VAG providers care for patients using an anti-racist, survivor-centered and low-intervention delivery model that midwives have used for thousands of years. Lived experience, as well as  scientific evidence, inform our organizational structures, policies, practices, and attitudes, so that power is shared equitably, within our organization as well as with those we serve.
-            </Text>
+            <Stack direction={['column', 'row']}>
+              <Box>
+                <Text marginTop={4} maxWidth={['100%', '100%', 580]}>
+                  We are a diverse group of abortion counselors and clinicians who came together to dismantle supremacy ideologies within health care while prioritizing support and accessibility needs for both patients and clinic staff.
+                </Text>
+                <Hide above='md'>
+                  <Center>
+                    <Image
+                      height={251}
+                      src='/section-05-about/vag-01@1x.png'
+                      width={287}
+                    />
+                  </Center>
+                </Hide>
+                <Text marginTop={4} maxWidth={['100%', '100%', 580]}>
+                  Valley Abortion Group is the first Queer- and BIPOC-led, employee-directed abortion clinic focused on comprehensive abortion care. We are the fifth clinic in the country, and only clinic is the southwest, to provide abortion care in all stages of pregnancy.
+                </Text>
+                <Text marginTop={4} maxWidth={['100%', '100%', 580]}>
+                  VAG providers care for patients using an anti-racist, survivor-centered and low-intervention delivery model that midwives have used for thousands of years. Lived experience, as well as  scientific evidence, inform our organizational structures, policies, practices, and attitudes, so that power is shared equitably, within our organization as well as with those we serve.
+                </Text>
+                <Hide above='md'>
+                  <Center marginTop={4}>
+                    <Image
+                      height={142}
+                      src='/section-05-about/vag-02@1x.png'
+                      width={318}
+                    />
+                  </Center>
+                </Hide>
+              </Box>
+              <Show above='md'>
+                <Image
+                  height={532}
+                  src='/section-05-about/vag-03@1x.png'
+                  width={354}
+                />
+              </Show>
+            </Stack>
           </Container>
         </Box>
-        <Box bg='teal.100'>
+        <Box bg='teal.100' position='relative' zIndex={1}>
           <Container maxW='4xl' paddingY={6}>
             <Heading as='h2' textAlign={['left', 'right']}>
               Help us help folks
