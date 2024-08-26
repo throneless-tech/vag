@@ -18,7 +18,7 @@ export default function Hero() {
       position='relative'
     >
       <Container
-        maxW='4xl'
+        maxW='3xl'
         paddingBottom={['80px', 160, 120]}
         paddingTop={['170px', 20, 16]}
         position='relative'

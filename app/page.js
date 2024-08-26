@@ -6,6 +6,7 @@ import {
   Button,
   Center,
   Container,
+  Flex,
   Grid,
   GridItem,
   Heading,
@@ -16,6 +17,7 @@ import {
   ListItem,
   Show,
   SimpleGrid,
+  Spacer,
   Stack,
   Text
 } from '@chakra-ui/react'
@@ -61,7 +63,7 @@ export default function Home() {
               width={374}
             />
           </Box>
-          <Container color='white' maxW='4xl' paddingY={6}>
+          <Container color='white' maxW='3xl' paddingY={6}>
             <Heading as='h2' variant='h2'>
               Set up an Appointment
             </Heading>
@@ -207,7 +209,7 @@ export default function Home() {
           </Container>
         </Box>
         <Box>
-          <Container maxW='4xl' paddingY={6}>
+          <Container maxW='3xl' paddingY={6}>
             <Heading as='h2' color='teal.200' variant='h2'>
               Should you come to VAG Clinic?
             </Heading>
@@ -326,7 +328,7 @@ export default function Home() {
           zIndex={1}
         >
           <Container
-            maxW='4xl'
+            maxW='3xl'
             paddingY={6}
           >
             <Heading as='h2' variant='h2'>
@@ -405,7 +407,7 @@ export default function Home() {
               />
             </Box>
           </Show>
-          <Container maxW='4xl' paddingY={6}>
+          <Container maxW='3xl' paddingY={6}>
             <Heading as='h2' variant='h2'>
               Who is VAG?
             </Heading>
@@ -450,16 +452,63 @@ export default function Home() {
           </Container>
         </Box>
         <Box bg='teal.100' position='relative' zIndex={1}>
-          <Container maxW='4xl' paddingY={6}>
-            <Heading as='h2' textAlign={['left', 'right']}>
-              Help us help folks
-            </Heading>
+          <Container maxW='3xl' paddingY={6}>
+            <Grid
+              alignItems='center'
+              templateColumns='repeat(10, 1fr)'
+            >
+              <GridItem colSpan={[0, 0, 3]}>
+                <Show above='sm'>
+                  <Image
+                    height={4}
+                    src='/icons/line@1x.png'
+                    width={320}
+                  />
+                </Show>
+              </GridItem>
+              <GridItem colSpan={[10, 10, 7]}>
+                <Heading
+                  as='h2'
+                  textAlign={['left', 'left', 'right']}
+                  variant='h2'
+                >
+                  Help us help folks
+                </Heading>
+              </GridItem>
+            </Grid>
+
             <Text marginTop={4}>
               [why folks should donate] Eaque ipsa quae ab illo inventore veritatis et quasi. Inventore  veritatis et quasi architecto beatae vitae dicta sunt explicabo. Esse  cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in  reprehenderit in voluptate velit.
             </Text>
-            <Button marginY={8} variant='brown'>
-              Donate Now
-            </Button>
+            <Flex
+              alignItems='center'
+              direction={['column', 'row']}
+            >
+              <Button
+                marginY={8}
+                minW={220}
+                variant='brown'
+              >
+                <Image
+                  height={27}
+                  src='/icons/icon-heart@1.png'
+                  width={30}
+                />
+                <Text as='span' paddingLeft={1}>
+                  Donate Now
+                </Text>
+              </Button>
+              <Spacer />
+              <Image
+                height={150}
+                src='/section-06-support/hand@1x.png'
+                sx={{
+                  height: [85, 100, 150],
+                  width: [300, 370, 550]
+                }}
+                width={550}
+              />
+            </Flex>
           </Container>
         </Box>
         <Footer />

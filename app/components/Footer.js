@@ -1,22 +1,30 @@
 // Chakra UI imports
-import LogoFooter from '@/public/LogoFooter'
-import { Link } from '@chakra-ui/next-js'
+import { Image } from '@chakra-ui/next-js';
 import {
   Box,
   Center,
   Container,
-  Divider,
-  Flex,
   HStack,
+  Link,
+  LinkBox,
+  LinkOverlay,
+  Show,
   Spacer,
   Stack,
   Text,
-} from '@chakra-ui/react'
+  VisuallyHidden,
+} from '@chakra-ui/react';
+
+// icon imports
+import LogoFooter from '@/public/LogoFooter';
+import FacebookIcon from '@/public/icons/social/FacebookIcon';
+import InstagramIcon from '@/public/icons/social/InstagramIcon';
+import XTwitterIcon from '@/public/icons/social/XTwitterIcon';
 
 export default function Footer() {
   return (
     <Box bg='brown' color='white'>
-      <Container maxW='4xl' paddingY={6}>
+      <Container maxW='3xl' paddingY={6}>
         <Stack direction={['column', 'row']} spacing={6}>
           <Stack direction={['column', 'row-reverse']} spacing={4} >
             <Box fontSize={14} textAlign={['center', 'right']}>
@@ -37,6 +45,30 @@ export default function Footer() {
                 Follow us
               </Text>
               <HStack justifyContent='center'>
+                <Link
+                  href="#FIXME"
+                >
+                  <VisuallyHidden>
+                    Vag on X/Twitter
+                  </VisuallyHidden>
+                  <XTwitterIcon height={12} width={14} />
+                </Link>
+                <Link
+                  href="#FIXME"
+                >
+                  <VisuallyHidden>
+                    Vag on Facebook
+                  </VisuallyHidden>
+                  <FacebookIcon height={13} width={8} />
+                </Link>
+                <LinkBox>
+                  <LinkOverlay href="#FIXME">
+                  <VisuallyHidden>
+                    Vag on Instagram
+                  </VisuallyHidden>
+                  <InstagramIcon height={14} width={14} />
+                  </LinkOverlay>
+                </LinkBox>
                 <Text>@valleyabortiongroup</Text>
               </HStack>
             </Box>
@@ -59,8 +91,28 @@ export default function Footer() {
         </Stack>
         <Box>
           <Box marginTop={4}>
-            <Divider />
-            <Stack alignItems='center' direction={['column', 'row']} justifyContent='center'>
+            <Center>
+              <HStack spacing={0}>
+                <Image
+                  height={4}
+                  src='/icons/line@1x.png'
+                  width={320}
+                />
+                <Show above='sm'>
+                <Image
+                  height={4}
+                  src='/icons/line@1x.png'
+                  width={320}
+                />
+                </Show>
+              </HStack>
+            </Center>
+            <Stack
+              alignItems='center'
+              direction={['column', 'row']}
+              justifyContent='center'
+              marginTop={2}
+            >
               <Text as='b'>
                 Call 555-555-5555{' '}
               </Text>
@@ -68,7 +120,22 @@ export default function Footer() {
                 for abortion support
               </Text>
             </Stack>
-            <Divider />
+            <Center>
+              <HStack spacing={0}>
+                <Image
+                  height={4}
+                  src='/icons/line@1x.png'
+                  width={320}
+                />
+                <Show above='sm'>
+                <Image
+                  height={4}
+                  src='/icons/line@1x.png'
+                  width={320}
+                />
+                </Show>
+              </HStack>
+            </Center>
           </Box>
           <Spacer />
           <Text
@@ -83,14 +150,14 @@ export default function Footer() {
               href='https://throneless.tech'
               textDecoration='underline'
             >
-            Throneless Tech
+              Throneless Tech
             </Link>{' '}and{' '}
             <Link
               color='tan.100 !important'
               href='https://www.designchoice.studio/'
               textDecoration='underline'
             >
-            Design Choice
+              Design Choice
             </Link>
           </Text>
         </Box>
