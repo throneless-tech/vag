@@ -49,7 +49,7 @@ export default function Hero() {
               color: 'brown',
               position: 'relative',
               _after: {
-                backgroundImage: 'url("/section-01-hero/line@1x.png")',
+                backgroundImage: 'url("/icons/line@1x.png")',
                 bottom: ['-0.3em', '-0.1em'],
                 content: '""',
                 height: 5,
@@ -70,7 +70,7 @@ export default function Hero() {
           >
             <Image
               height={26}
-              src='/section-01-hero/icon-rainbow@1.png'
+              src='/icons/icon-rainbow@1.png'
               paddingRight={1}
               width={36}
             />

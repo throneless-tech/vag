@@ -73,7 +73,7 @@ export default function Header() {
               as='span'
               className={header.breatheContainer}
               sx={{
-                marginLeft: ['-20px', '-30px', '-40px']
+                marginLeft: ['-60px', '-30px', '-40px']
               }}
             >
               Quick Exit
@@ -84,7 +84,7 @@ export default function Header() {
               marginLeft={2}
               src='/icons/icon-flower@1.png'
               sx={{
-                right: ['30%', '10%']
+                right: ['34%', '10%']
               }}
               width={35}
             />

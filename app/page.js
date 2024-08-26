@@ -6,11 +6,13 @@ import {
   Button,
   Center,
   Container,
+  Grid,
+  GridItem,
   Heading,
   Hide,
   Highlight,
+  HStack,
   List,
-  ListIcon,
   ListItem,
   Show,
   SimpleGrid,
@@ -48,7 +50,7 @@ export default function Home() {
               transform: 'translateX(30%)',
               zIndex: 0,
             }}
-            // width={['86vw', '74vw', '60vw']}
+          // width={['86vw', '74vw', '60vw']}
           >
             <Image
               height={434}
@@ -60,7 +62,7 @@ export default function Home() {
               width={374}
             />
           </Box>
-          <Container color='white' paddingY={6}>
+          <Container color='white' maxW='4xl' paddingY={6}>
             <Heading as='h2' variant='h2'>
               Set up an Appointment
             </Heading>
@@ -85,6 +87,7 @@ export default function Home() {
               <ListItem
                 bg='pink'
                 className={styles.listItem}
+                marginLeft={[0, 0, 16]}
                 marginTop={[20, 20, 8]}
                 paddingX={[6, 8]}
                 paddingY={[6, 6, 2]}
@@ -99,7 +102,7 @@ export default function Home() {
                     paddingLeft: 9,
                     position: 'absolute',
                     top: ['-40%', '-32%', '50%'],
-                    transform: ['translateX(-50%)', 'translateX(-50%)',  'translateY(-50%)'],
+                    transform: ['translateX(-50%)', 'translateX(-50%)', 'translateY(-50%)'],
                     width: 106,
                   }
                 }}
@@ -118,6 +121,7 @@ export default function Home() {
               <ListItem
                 bg='pink'
                 className={styles.listItem}
+                marginLeft={[0, 0, 16]}
                 marginTop={[20, 20, 8]}
                 paddingX={[6, 8]}
                 paddingY={[6, 6, 2]}
@@ -142,6 +146,7 @@ export default function Home() {
               <ListItem
                 bg='pink'
                 className={styles.listItem}
+                marginLeft={[0, 0, 16]}
                 marginTop={[20, 20, 8]}
                 paddingX={[6, 8]}
                 paddingY={[6, 6, 2]}
@@ -188,7 +193,7 @@ export default function Home() {
               >
                 <Image
                   height={26}
-                  src='/section-01-hero/icon-rainbow@1.png'
+                  src='/icons/icon-rainbow@1.png'
                   paddingRight={1}
                   width={36}
                 />
@@ -203,31 +208,114 @@ export default function Home() {
           </Container>
         </Box>
         <Box>
-          <Container paddingY={6}>
-            <Heading as='h2' variant='h2'>
+          <Container maxW='4xl' paddingY={6}>
+            <Heading as='h2' color='teal.200' variant='h2'>
               Should you come to VAG Clinic?
             </Heading>
-            <Heading as='h3' color='red.100' marginTop={2} variant='h3'>
+            <Heading
+              as='h3'
+              color='red.100'
+              fontWeight={500}
+              lineHeight={1.4}
+              marginTop={2}
+              variant='h3'
+            >
               <Highlight
-                query={['Anyone who desires an abortio']}
-                styles={{ color: 'red.100', textDecoration: 'underline', whiteSpace: 'wrap' }}
+                query={['Anyone who desires an abortion']}
+                styles={{
+                  color: 'red.100',
+                  fontWeight: 500,
+                  position: 'relative',
+                  whiteSpace: 'wrap',
+                  _after: {
+                    backgroundImage: 'url("/icons/line-teal@1x.png")',
+                    bottom: ['-0.3em', '-0.3em'],
+                    content: '""',
+                    height: 5,
+                    left: 0,
+                    lineHeight: 1.4,
+                    position: 'absolute',
+                    width: '100%',
+                    wordBreak: 'break-all'
+                  }
+                }}
               >
                 Anyone who desires an abortion should call us. Period.
               </Highlight>
             </Heading>
-            <Text marginTop={4}>
-              We provide support and resources to folx having to cross borders due to abortion restrictions in order to receive care at VAG in Albuquerque, New Mexico, located on occupied Tiwa land.
-            </Text>
-            <Text marginTop={4}>
-              Cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia. Itaque earum rerum hic tenetur a sapiente delectus. At vero eos et accusamus. Excepteur sint occaecat cupidatat non proident, sunt in culpa.
-            </Text>
-            <Heading as='h2' marginTop={6} textAlign={['center', 'right']}>
-              We provide
-            </Heading>
+            <Stack
+              alignItems='center'
+              direction={['column', 'row']}
+              gap={6}
+              marginTop={6}
+            >
+              <Box>
+                <Text marginTop={4}>
+                  We provide support and resources to folx having to cross borders due to abortion restrictions in order to receive care at VAG in Albuquerque, New Mexico, located on occupied Tiwa land.
+                </Text>
+                <Text marginTop={4}>
+                  Cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia. Itaque earum rerum hic tenetur a sapiente delectus. At vero eos et accusamus. Excepteur sint occaecat cupidatat non proident, sunt in culpa.
+                </Text>
+              </Box>
+              <Image
+                height={196}
+                src='/section-03-come-provide/jug@1x.png'
+                width={172}
+              />
+            </Stack>
+            <Grid
+              alignItems='center'
+              templateColumns='repeat(10, 1fr)'
+            >
+              <GridItem colSpan={[0, 0, 7]}>
+                <Show above='md'>
+                  <HStack spacing={0}>
+                  <Image
+                    height={4}
+                    src='/icons/line-teal@1x.png'
+                    width={320}
+                  />
+                  <Image
+                    height={4}
+                    src='/icons/line-teal@1x.png'
+                    width={320}
+                  />
+                  </HStack>
+                </Show>
+              </GridItem>
+              <GridItem colSpan={[10, 10, 3]}>
+                <Heading
+                  as='h2'
+                  color='teal.200'
+                  marginTop={[10, 6]}
+                  textAlign={['left', 'left', 'right']}
+                >
+                  We provide
+                </Heading>
+              </GridItem>
+            </Grid>
             <SimpleGrid columns={[1, 2, 3]} marginTop={4} spacing={4}>
-              <CardServices title='In Clinic Abortions' body='upiditate non provident, similique sunt in culpa qui officia deserunt mollitia.' />
-              <CardServices title='Spiritual Services' body='upiditate non provident, similique sunt in culpa qui officia deserunt mollitia.' />
-              <CardServices title='Grief Counseling' body='upiditate non provident, similique sunt in culpa qui officia deserunt mollitia.' />
+              <CardServices
+                body='upiditate non provident, similique sunt in culpa qui officia deserunt mollitia.'
+                height={100}
+                icon='/section-03-come-provide/moon@1x.png'
+                title='In Clinic Abortions'
+                width={100}
+              />
+              <CardServices
+                body='upiditate non provident, similique sunt in culpa qui officia deserunt mollitia.'
+                height={100}
+                icon='/section-03-come-provide/water@1x.png'
+                title='Spiritual Services'
+                width={210}
+              />
+              <CardServices
+                body='upiditate non provident, similique sunt in culpa qui officia deserunt mollitia.'
+                height={100}
+                icon='/section-03-come-provide/eye@1x.png'
+                title='Grief Counseling'
+                width={100}
+              />
             </SimpleGrid>
           </Container>
         </Box>

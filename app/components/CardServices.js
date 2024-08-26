@@ -1,8 +1,10 @@
 // Chakra UI imports
+import { Image } from '@chakra-ui/next-js';
 import {
   Card,
   CardBody,
   CardHeader,
+  Center,
   Heading,
 } from '@chakra-ui/react';
 
@@ -13,8 +15,20 @@ export default function CardServices(props) {
       color='brown'
       textAlign='center'
     >
-      <CardHeader>
-        <Heading as='h3'>
+      <CardHeader paddingBottom={0}>
+        {props.icon ? (
+          <Center>
+            <Image
+              height={props.height}
+              src={props.icon}
+              width={props.width}
+            />
+          </Center>
+        ) : null}
+        <Heading
+          as='h3'
+          marginTop={[2, 8]}
+        >
           {props.title}
         </Heading>
       </CardHeader>
