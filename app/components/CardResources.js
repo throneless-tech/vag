@@ -14,7 +14,7 @@ import {
 
 export default function CardResources(props) {
   return(
-    <Card color='brown'>
+    <Card color='brown' width={400}>
       <CardHeader paddingBottom={0}>
         <Heading as='h3' fontSize={24} variant='h3'>
           {props.title}

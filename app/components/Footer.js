@@ -25,9 +25,15 @@ export default function Footer() {
   return (
     <Box bg='brown' color='white'>
       <Container maxW='container.xl' paddingY={6}>
-        <Stack direction={['column', 'row']} spacing={6}>
-          <Stack direction={['column', 'row-reverse']} spacing={4} >
-            <Box fontSize={14} textAlign={['center', 'right']}>
+        <Stack
+          direction={['column', 'row']}
+          spacing={[2, 6]}
+        >
+          <Stack
+            direction={['column', 'row-reverse']}
+            spacing={4}
+          >
+            <Box fontSize={14} textAlign={['center', 'left']}>
               <Text as='b' fontSize={18}>Contact us</Text>
               <Text>VAG Clinic</Text>
               <Text>
@@ -72,12 +78,12 @@ export default function Footer() {
                 <Text>@valleyabortiongroup</Text>
               </HStack>
             </Box>
-            <Center marginTop={6}>
-              <LogoFooter height={245} width={211} />
+            <Center>
+              <LogoFooter height={205} width={211} />
             </Center>
           </Stack>
           <Spacer />
-          <Box fontSize={14} marginTop={[0, 6]}>
+          <Box fontSize={14}>
             <Text>
               We’ve designed our website to protect your privacy by [doing something awesome].
             </Text>

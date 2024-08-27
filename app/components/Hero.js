@@ -76,6 +76,9 @@ export default function Hero() {
               height={26}
               src='/icons/icon-rainbow@1.png'
               paddingRight={1}
+              sx={{
+                width: '36px',
+              }}
               width={36}
             />
             <Text as='span'>

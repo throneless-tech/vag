@@ -14,6 +14,7 @@ export default function CardServices(props) {
       bg='teal.50'
       color='brown'
       textAlign='center'
+      width={400}
     >
       <CardHeader paddingBottom={0}>
         {props.icon ? (

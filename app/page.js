@@ -67,7 +67,7 @@ export default function Home() {
             <Heading as='h2' variant='h2'>
               Set up an Appointment
             </Heading>
-            <Text paddingTop={4} maxWidth={[400, 600, 780, 1200]}>
+            <Text paddingTop={4} maxWidth={[400, 600, 780, 780, 1200]}>
               To maintain your privacy, we are only scheduling appointments by phone.{' '}
               <Text as='b'>Call or text 555-555-5555, 8 a.m. to 5 p.m. (MDT), Monday through Friday.
               </Text>
@@ -90,8 +90,8 @@ export default function Home() {
                 className={styles.listItem}
                 marginLeft={[0, 0, 16]}
                 marginTop={[20, 20, 8]}
-                paddingX={[6, 8]}
-                paddingY={[6, 6, 2]}
+                paddingX={[6, 8, 12]}
+                paddingY={[7, 6, 2]}
                 sx={{
                   position: 'relative',
                   _before: {
@@ -100,10 +100,10 @@ export default function Home() {
                     content: '""',
                     height: 95,
                     left: ['50%', '50%', '-9%', '-7%'],
-                    paddingLeft: 9,
+                    paddingLeft: 10,
                     position: 'absolute',
-                    top: ['-40%', '-32%', '50%'],
-                    transform: ['translateX(-50%)', 'translateX(-50%)', 'translateY(-50%)'],
+                    top: ['-22%', '-32%', '50%'],
+                    transform: ['translateX(-50%) translateY(-16%)', 'translateX(-50%)', 'translateY(-50%)'],
                     width: 106,
                   }
                 }}
@@ -124,8 +124,8 @@ export default function Home() {
                 className={styles.listItem}
                 marginLeft={[0, 0, 16]}
                 marginTop={[20, 20, 8]}
-                paddingX={[6, 8]}
-                paddingY={[6, 6, 2]}
+                paddingX={[6, 8, 12]}
+                paddingY={[7, 7, 2]}
                 sx={{
                   position: 'relative',
                   _before: {
@@ -134,9 +134,9 @@ export default function Home() {
                     content: '""',
                     height: 95,
                     left: ['50%', '50%', '-9%', '-7%'],
-                    paddingLeft: 7,
+                    paddingLeft: 9,
                     position: 'absolute',
-                    top: ['-46%', '-46%', '50%'],
+                    top: ['-44%', '-46%', '50%'],
                     transform: ['translateX(-50%)', 'translateX(-50%)', 'translateY(-50%)'],
                     width: 106,
                   }
@@ -149,8 +149,8 @@ export default function Home() {
                 className={styles.listItem}
                 marginLeft={[0, 0, 16]}
                 marginTop={[20, 20, 8]}
-                paddingX={[6, 8]}
-                paddingY={[6, 6, 2]}
+                paddingX={[6, 8, 12]}
+                paddingY={[8, 8, 2]}
                 sx={{
                   position: 'relative',
                   _before: {
@@ -159,9 +159,9 @@ export default function Home() {
                     content: '""',
                     height: 95,
                     left: ['50%', '50%', '-9%', '-7%'],
-                    paddingLeft: 7,
+                    paddingLeft: 9,
                     position: 'absolute',
-                    top: ['-56%', '-68%', '50%'],
+                    top: ['-52%', '-58%', '50%'],
                     transform: ['translateX(-50%)', 'translateX(-50%)', 'translateY(-50%)'],
                     width: 106,
                   }
@@ -201,8 +201,11 @@ export default function Home() {
               >
                 <Image
                   height={26}
-                  src='/icons/icon-rainbow@1.png'
                   paddingRight={1}
+                  src='/icons/icon-rainbow@1.png'
+                  sx={{
+                    width: '36px',
+                  }}
                   width={36}
                 />
                 <Text as='span'>
@@ -318,7 +321,13 @@ export default function Home() {
                 </Heading>
               </GridItem>
             </Grid>
-            <SimpleGrid columns={[1, 2, 3]} marginTop={4} spacing={4}>
+            <Flex
+              direction='row'
+              gap={4}
+              justifyContent='center'
+              marginTop={4}
+              wrap='wrap'
+            >
               <CardServices
                 body='upiditate non provident, similique sunt in culpa qui officia deserunt mollitia.'
                 height={100}
@@ -340,7 +349,7 @@ export default function Home() {
                 title='Grief Counseling'
                 width={100}
               />
-            </SimpleGrid>
+            </Flex>
           </Container>
         </Box>
         <Box
@@ -357,7 +366,13 @@ export default function Home() {
             <Heading as='h2' variant='h2'>
               Other Abortion Resources
             </Heading>
-            <SimpleGrid columns={[1, 2, 3]} marginTop={4} spacing={4}>
+            <Flex
+              direction='row'
+              gap={4}
+              justifyContent='center'
+              marginTop={4}
+              wrap='wrap'
+            >
               <CardResources
                 body='ineedana.com is a comprehensive, regularly updated, and personalized resource for abortion seekers in the US.'
                 height={81}
@@ -382,7 +397,7 @@ export default function Home() {
                 linkText='View state laws'
                 title='Find out about abortion laws in your state'
               />
-            </SimpleGrid>
+            </Flex>
           </Container>
         </Box>
         <Box position='relative'>
