@@ -67,7 +67,7 @@ export default function Home() {
             <Heading as='h2' variant='h2'>
               Set up an Appointment
             </Heading>
-            <Text paddingTop={4} maxWidth={[400, 600, 780]}>
+            <Text paddingTop={4} maxWidth={[400, 600, 780, 1200]}>
               To maintain your privacy, we are only scheduling appointments by phone.{' '}
               <Text as='b'>Call or text 555-555-5555, 8 a.m. to 5 p.m. (MDT), Monday through Friday.
               </Text>
@@ -99,7 +99,7 @@ export default function Home() {
                     backgroundRepeat: 'no-repeat',
                     content: '""',
                     height: 95,
-                    left: ['50%', '50%', '-9%'],
+                    left: ['50%', '50%', '-9%', '-7%'],
                     paddingLeft: 9,
                     position: 'absolute',
                     top: ['-40%', '-32%', '50%'],
@@ -111,7 +111,7 @@ export default function Home() {
                 <Text>
                   What was the the first day of your last menstrual period? or how many weeks pregnant you are according to an ultrasound (if you have had one)?
                 </Text>
-                <Text>
+                <Text marginTop={3}>
                   Need Help? Try this{' '}
                   <Link href='#' textDecoration='underline' _hover={{ color: 'blue.500' }}>
                     Pregnancy Calculator
@@ -133,7 +133,7 @@ export default function Home() {
                     backgroundRepeat: 'no-repeat',
                     content: '""',
                     height: 95,
-                    left: ['50%', '50%', '-9%'],
+                    left: ['50%', '50%', '-9%', '-7%'],
                     paddingLeft: 7,
                     position: 'absolute',
                     top: ['-46%', '-46%', '50%'],
@@ -158,7 +158,7 @@ export default function Home() {
                     backgroundRepeat: 'no-repeat',
                     content: '""',
                     height: 95,
-                    left: ['50%', '50%', '-9%'],
+                    left: ['50%', '50%', '-9%', '-7%'],
                     paddingLeft: 7,
                     position: 'absolute',
                     top: ['-56%', '-68%', '50%'],
@@ -185,10 +185,17 @@ export default function Home() {
                 />
               </Show>
             </Center>
-            <Stack direction={['column', 'row']} marginTop={8}>
+            <Stack
+              alignItems={['center', 'center', 'stretch']}
+              direction={['column', 'row']}
+              gap={3}
+              justifyContent='center'
+              marginTop={8}
+            >
               <Button
                 marginLeft={['auto', 0]}
                 marginRight={['auto', 0]}
+                minW={274}
                 variant='tan'
                 width={274}
               >
@@ -281,6 +288,22 @@ export default function Home() {
                       src='/icons/line-teal@1x.png'
                       width={320}
                     />
+                    <Show above='lg'>
+                      <Image
+                        height={4}
+                        src='/icons/line-teal@1x.png'
+                        width={320}
+                      />
+                    </Show>
+                    <Show above='xl'>
+                      <Image
+                        height={10}
+                        marginLeft='-30px'
+                        paddingTop={2}
+                        src='/icons/line-teal-short.png'
+                        width={160}
+                      />
+                    </Show>
                   </HStack>
                 </Show>
               </GridItem>
@@ -370,7 +393,7 @@ export default function Home() {
             sx={{
               right: 0,
               top: 0,
-              transform: 'translateX(55%) translateY(-30%)',
+              transform: 'translateX(50%) translateY(-30%)',
               zIndex: 0,
             }}
           >
@@ -390,9 +413,9 @@ export default function Home() {
               marginRight={0}
               position='absolute'
               sx={{
-                bottom: 0,
-                right: 0,
-                transform: 'translateX(16%) translateY(10%)',
+                bottom: [0, 0, '-8%', '-16%'],
+                left: ['50%', '50%', '50%', '60%'],
+                transform: 'translateX(68%) translateY(-26%)',
                 zIndex: 0,
               }}
             >
@@ -400,20 +423,20 @@ export default function Home() {
                 height={434}
                 src='/section-05-about/cactus@1x.png'
                 sx={{
-                  height: [150, 250, 350],
-                  width: [100, 200, 300]
+                  height: [150, 250, 312],
+                  width: [100, 200, 268]
                 }}
                 width={374}
               />
             </Box>
           </Show>
-          <Container maxW='container.xl' paddingY={6}>
-            <Heading as='h2' variant='h2'>
-              Who is VAG?
-            </Heading>
+          <Container maxW='container.xl' paddingY={[6, 6, 10]}>
             <Stack direction={['column', 'row']}>
               <Box>
-                <Text marginTop={4} maxWidth={['100%', '100%', 580]}>
+                <Heading as='h2' variant='h2'>
+                  Who is VAG?
+                </Heading>
+                <Text marginTop={4} maxWidth={['100%', '100%', 580, 780]}>
                   We are a diverse group of abortion counselors and clinicians who came together to dismantle supremacy ideologies within health care while prioritizing support and accessibility needs for both patients and clinic staff.
                 </Text>
                 <Hide above='md'>
@@ -425,10 +448,10 @@ export default function Home() {
                     />
                   </Center>
                 </Hide>
-                <Text marginTop={4} maxWidth={['100%', '100%', 580]}>
+                <Text marginTop={4} maxWidth={['100%', '100%', 580, 780]}>
                   Valley Abortion Group is the first Queer- and BIPOC-led, employee-directed abortion clinic focused on comprehensive abortion care. We are the fifth clinic in the country, and only clinic is the southwest, to provide abortion care in all stages of pregnancy.
                 </Text>
-                <Text marginTop={4} maxWidth={['100%', '100%', 580]}>
+                <Text marginTop={4} maxWidth={['100%', '100%', 580, 780]}>
                   VAG providers care for patients using an anti-racist, survivor-centered and low-intervention delivery model that midwives have used for thousands of years. Lived experience, as well as  scientific evidence, inform our organizational structures, policies, practices, and attitudes, so that power is shared equitably, within our organization as well as with those we serve.
                 </Text>
                 <Hide above='md'>
@@ -442,11 +465,13 @@ export default function Home() {
                 </Hide>
               </Box>
               <Show above='md'>
-                <Image
-                  height={532}
-                  src='/section-05-about/vag-03@1x.png'
-                  width={354}
-                />
+                <Box marginTop={[4, 4, 10, 0]}>
+                  <Image
+                    height={532}
+                    src='/section-05-about/vag-03@1x.png'
+                    width={354}
+                  />
+                </Box>
               </Show>
             </Stack>
           </Container>
@@ -458,13 +483,23 @@ export default function Home() {
               templateColumns='repeat(10, 1fr)'
             >
               <GridItem colSpan={[0, 0, 3]}>
-                <Show above='sm'>
-                  <Image
-                    height={4}
-                    src='/icons/line@1x.png'
-                    width={320}
-                  />
-                </Show>
+                <HStack>
+                  <Show above='md'>
+                    <Image
+                      height={4}
+                      src='/icons/line@1x.png'
+                      width={320}
+                    />
+                  </Show>
+                  <Show above='lg'>
+                    <Image
+                      height={4}
+                      marginLeft='-10px'
+                      src='/icons/line@1x.png'
+                      width={320}
+                    />
+                  </Show>
+                </HStack>
               </GridItem>
               <GridItem colSpan={[10, 10, 7]}>
                 <Heading
