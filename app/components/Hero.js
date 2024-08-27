@@ -3,7 +3,6 @@ import { Image } from '@chakra-ui/next-js'
 import {
   Box,
   Button,
-  Center,
   Container,
   Heading,
   Highlight,
@@ -18,8 +17,8 @@ export default function Hero() {
       position='relative'
     >
       <Container
-        maxW='3xl'
-        paddingBottom={['80px', 160, 120]}
+        maxW='container.xl'
+        paddingBottom={[140, 160, 120]}
         paddingTop={['170px', 20, 16]}
         position='relative'
         zIndex={1}
@@ -62,7 +61,12 @@ export default function Hero() {
             We provide abortion care in all stages of pregnancy
           </Highlight>
         </Heading>
-        <Stack direction={['column', 'row']} gap={6} marginTop={6}>
+        <Stack
+          alignItems='center'
+          direction={['column', 'row']}
+          gap={6}
+          marginTop={6}
+        >
           <Button
             marginLeft={['auto', 0]}
             marginRight={['auto', 0]}
@@ -82,7 +86,6 @@ export default function Hero() {
             fontSize={24}
             fontWeight={700}
             lineHeight='150%'
-            maxWidth={515}
           >
             If you&apos;re seeking abortion care or assistance, we can help.
           </Text>
@@ -95,17 +98,17 @@ export default function Hero() {
         sx={{
           bottom: 0,
           right: 0,
-          transform: 'translateX(10%) translateY(10%)',
+          transform: 'translateX(8%) translateY(10%)',
           zIndex: 0,
         }}
-        width={['86vw', '74vw', '60vw']}
+        // width={['86vw', '74vw', '38vw']}
       >
         <Image
           height={340}
           src='/section-01-hero/mountains@1x.png'
           sx={{
             height: [200, 260, 340],
-            width: [420, 560, 840]
+            width: [420, 520, 640]
           }}
           width={840}
         />

@@ -63,7 +63,7 @@ export default function Home() {
               width={374}
             />
           </Box>
-          <Container color='white' maxW='3xl' paddingY={6}>
+          <Container color='white' maxW='container.xl' paddingY={6}>
             <Heading as='h2' variant='h2'>
               Set up an Appointment
             </Heading>
@@ -209,7 +209,7 @@ export default function Home() {
           </Container>
         </Box>
         <Box>
-          <Container maxW='3xl' paddingY={6}>
+          <Container maxW='container.xl' paddingY={6}>
             <Heading as='h2' color='teal.200' variant='h2'>
               Should you come to VAG Clinic?
             </Heading>
@@ -328,7 +328,7 @@ export default function Home() {
           zIndex={1}
         >
           <Container
-            maxW='3xl'
+            maxW='container.xl'
             paddingY={6}
           >
             <Heading as='h2' variant='h2'>
@@ -407,7 +407,7 @@ export default function Home() {
               />
             </Box>
           </Show>
-          <Container maxW='3xl' paddingY={6}>
+          <Container maxW='container.xl' paddingY={6}>
             <Heading as='h2' variant='h2'>
               Who is VAG?
             </Heading>
@@ -452,7 +452,7 @@ export default function Home() {
           </Container>
         </Box>
         <Box bg='teal.100' position='relative' zIndex={1}>
-          <Container maxW='3xl' paddingY={6}>
+          <Container maxW='container.xl' paddingY={6}>
             <Grid
               alignItems='center'
               templateColumns='repeat(10, 1fr)'

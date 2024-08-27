@@ -24,7 +24,7 @@ import XTwitterIcon from '@/public/icons/social/XTwitterIcon';
 export default function Footer() {
   return (
     <Box bg='brown' color='white'>
-      <Container maxW='3xl' paddingY={6}>
+      <Container maxW='container.xl' paddingY={6}>
         <Stack direction={['column', 'row']} spacing={6}>
           <Stack direction={['column', 'row-reverse']} spacing={4} >
             <Box fontSize={14} textAlign={['center', 'right']}>

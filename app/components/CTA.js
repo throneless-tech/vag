@@ -4,7 +4,8 @@ import {
   Box,
   Button,
   Center,
-  Stack,
+  Flex,
+  Spacer,
   Text,
 } from '@chakra-ui/react'
 
@@ -16,22 +17,23 @@ export default function CTA() {
       position='relative'
       zIndex={1}
     >
-      <Stack direction={['column', 'row']}>
+      <Flex direction={['column', 'row']} gap='2px'>
         <Text
           bg='teal.300'
           color='white'
           fontSize={16}
           fontWeight={700}
           lineHeight='28px'
-          minW={['100%', 400, 750, 900 ]}
           paddingX={3}
           paddingY={2}
+          textAlign={['left', 'right']}
           width='100%'
         >
           Abortion is legal in many states; find out information for your state or a state near you.
         </Text>
-        <Center width='100%'>
-          <Button height='100%' width={[270, '100%']} paddingY={[2, 0]}>
+        <Spacer />
+        <Center>
+          <Button height='100%' width={270} paddingY={[2, 0]}>
             <Image
               height={29}
               paddingRight={1}
@@ -43,7 +45,7 @@ export default function CTA() {
             </Text>
           </Button>
         </Center>
-      </Stack>
+      </Flex>
     </Box>
   )
 }

@@ -3,8 +3,6 @@ import {
   Box,
   Button,
   Flex,
-  Grid,
-  GridItem,
   Heading,
   HStack,
   Spacer,
@@ -29,59 +27,67 @@ export default function Header() {
       position='fixed' width='100%'
       zIndex={100}
     >
-      <Grid
-        alignItems='center'
-        templateColumns='repeat(12, 1fr)'
-        gap={0}
+      <Flex
+        alignItems={['stretch', 'center']}
+        direction={['column', 'row']}
+        gap={2}
       >
-        <GridItem colSpan={[7, 4, 2]} paddingX={4} paddingY={2} gap={4}>
-          <VisuallyHidden>
-            <Heading as='h1'>
-              VAG Clinic
-            </Heading>
-          </VisuallyHidden>
-          <LogoNameIcon height='40px' width='137px' />
-        </GridItem>
-        <GridItem colSpan={[5, 5, 8]}>
-          <Text
-            as='b'
-            color='white'
-            fontSize={[16, 18]}
-            fontWeight='700'
+        <Box width='100vw'>
+          <HStack
+            justifyContent={['space-between', 'flex-start']}
+            paddingX={2}
+            paddingTop={[2, 0]}
+            spacing={[2, 6]}
           >
-            Call 555-555-5555
-          </Text>
-          <Text
-            as='span'
-            color='white'
-            fontSize={[16, 18]}
-            fontWeight={'400'}
-          >
-            {' '}for support
-          </Text>
-        </GridItem>
-        <GridItem colSpan={[12, 3, 2]}>
+            <VisuallyHidden>
+              <Heading as='h1'>
+                VAG Clinic
+              </Heading>
+            </VisuallyHidden>
+            <LogoNameIcon height='40px' width='137px' />
+            <Box maxW={[160, '100%']}>
+              <Text
+                as='b'
+                color='white'
+                fontSize={[16, 18]}
+                fontWeight='700'
+              >
+                Call 555-555-5555
+              </Text>
+              <Text
+                as='span'
+                color='white'
+                fontSize={[16, 18]}
+                fontWeight={'400'}
+              >
+                {' '}for support
+              </Text>
+            </Box>
+          </HStack>
+        </Box>
+        <Spacer />
+        <Box>
           <Button
             as='a'
             href='https://weather.com'
             height='100%'
             paddingY={[2, '16px']}
             variant='solid'
-            width='100%'
+            width={['100%', 162]}
           >
             <Text
               as='span'
               className={header.breatheContainer}
-              sx={{
-                marginLeft: ['-60px', '-30px', '-40px']
-              }}
+              paddingRight={7}
+              // sx={{
+              //   marginLeft: ['-80px', '-30px', '-40px']
+              // }}
             >
               Quick Exit
             </Text>
             <Image
               className={header.breathe}
               height={31}
-              marginLeft={2}
               src='/icons/icon-flower@1.png'
               sx={{
                 right: ['34%', '10%']
@@ -89,8 +95,8 @@ export default function Header() {
               width={35}
             />
           </Button>
-        </GridItem>
-      </Grid>
+        </Box>
+      </Flex>
     </Box>
   )
 }
