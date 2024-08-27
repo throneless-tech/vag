@@ -6,8 +6,6 @@ import {
   Container,
   HStack,
   Link,
-  LinkBox,
-  LinkOverlay,
   Show,
   Spacer,
   Stack,
@@ -57,7 +55,7 @@ export default function Footer() {
                   <VisuallyHidden>
                     Vag on X/Twitter
                   </VisuallyHidden>
-                  <XTwitterIcon height={12} width={14} />
+                  <XTwitterIcon height={3} width={4} />
                 </Link>
                 <Link
                   href="#FIXME"
@@ -65,16 +63,16 @@ export default function Footer() {
                   <VisuallyHidden>
                     Vag on Facebook
                   </VisuallyHidden>
-                  <FacebookIcon height={13} width={8} />
+                  <FacebookIcon height={4} width={3} />
                 </Link>
-                <LinkBox>
-                  <LinkOverlay href="#FIXME">
+                <Link
+                  href="#FIXME"
+                >
                   <VisuallyHidden>
                     Vag on Instagram
                   </VisuallyHidden>
-                  <InstagramIcon height={14} width={14} />
-                  </LinkOverlay>
-                </LinkBox>
+                  <InstagramIcon height={4} width={4} />
+                </Link>
                 <Text>@valleyabortiongroup</Text>
               </HStack>
             </Box>
@@ -105,11 +103,11 @@ export default function Footer() {
                   width={320}
                 />
                 <Show above='sm'>
-                <Image
-                  height={4}
-                  src='/icons/line@1x.png'
-                  width={320}
-                />
+                  <Image
+                    height={4}
+                    src='/icons/line@1x.png'
+                    width={320}
+                  />
                 </Show>
               </HStack>
             </Center>
@@ -134,11 +132,11 @@ export default function Footer() {
                   width={320}
                 />
                 <Show above='sm'>
-                <Image
-                  height={4}
-                  src='/icons/line@1x.png'
-                  width={320}
-                />
+                  <Image
+                    height={4}
+                    src='/icons/line@1x.png'
+                    width={320}
+                  />
                 </Show>
               </HStack>
             </Center>

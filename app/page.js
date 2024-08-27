@@ -16,7 +16,6 @@ import {
   List,
   ListItem,
   Show,
-  SimpleGrid,
   Spacer,
   Stack,
   Text
