@@ -113,7 +113,7 @@ export default function Home() {
                 }}
               >
                 <Text>
-                  What was the first day of your last period, or how many weeks pregnant are you according to an ultrasound (if you've had one)?
+                  What was the first day of your last period, or how many weeks pregnant are you according to an ultrasound (if you&apos;ve had one)?
                 </Text>
                 <Text marginTop={3}>
                   Need Help? Try this{' '}
