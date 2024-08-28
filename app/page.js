@@ -23,18 +23,22 @@ import {
 import { Image, Link } from '@chakra-ui/next-js'
 
 // components
-import Header from "@/app/components/Header";
-import Hero from "@/app/components/Hero";
-import CTA from "@/app/components/CTA";
-import Footer from '@/app/components/Footer';
-
-import styles from "./page.module.css";
 import CardServices from '@/app/components/CardServices';
 import CardResources from '@/app/components/CardResources';
+import CTA from "@/app/components/CTA";
+import Footer from '@/app/components/Footer';
+import Header from "@/app/components/Header";
+import Hero from "@/app/components/Hero";
+
+// styles
+import styles from "./page.module.css";
+
+// icons
+import MapIcon from '@/public/icons/MapIcon';
 
 export default function Home() {
   return (
-    <>
+    <Box overflowX='hidden'>
       <Header />
       {/* <main className={styles.main}> */}
       <main>
@@ -67,8 +71,9 @@ export default function Home() {
               Set up an Appointment
             </Heading>
             <Text paddingTop={4} maxWidth={[400, 600, 780, 780, 1200]}>
-              To maintain your privacy, we are only scheduling appointments by phone.{' '}
-              <Text as='b'>Call or text 555-555-5555, 8 a.m. to 5 p.m. (MDT), Monday through Friday.
+              To maintain your privacy, we are only scheduling appointments by phone.
+              <br />
+              <Text as='b' paddingTop={2}>Call or text 505-221-6337, 8 a.m. to 5 p.m. (MDT), Monday through Friday.
               </Text>
             </Text>
             <Center marginTop={6}>
@@ -108,11 +113,11 @@ export default function Home() {
                 }}
               >
                 <Text>
-                  What was the the first day of your last menstrual period? or how many weeks pregnant you are according to an ultrasound (if you have had one)?
+                  What was the first day of your last period, or how many weeks pregnant are you according to an ultrasound (if you've had one)?
                 </Text>
                 <Text marginTop={3}>
                   Need Help? Try this{' '}
-                  <Link href='#' textDecoration='underline' _hover={{ color: 'blue.500' }}>
+                  <Link href='https://www.perinatology.com/calculators2.htm' textDecoration='underline' _hover={{ color: 'blue.500' }}>
                     Pregnancy Calculator
                   </Link>
                   .
@@ -141,7 +146,7 @@ export default function Home() {
                   }
                 }}
               >
-                Do you need help with funding your care? VAG can help coordinate funds and travel for your abortion.
+                Do you need help funding your care?  VAG can help coordinate funds for your abortion.
               </ListItem>
               <ListItem
                 bg='pink'
@@ -166,7 +171,7 @@ export default function Home() {
                   }
                 }}
               >
-                Are you in or are you able to travel to New Mexico?
+                Do you need help with travel?  VAG can help coordinate travel for your abortion.
               </ListItem>
             </List>
             <Center marginTop={6}>
@@ -192,6 +197,8 @@ export default function Home() {
               marginTop={8}
             >
               <Button
+                as='a'
+                href='tel:+15052216337'
                 marginLeft={['auto', 0]}
                 marginRight={['auto', 0]}
                 minW={274}
@@ -208,11 +215,11 @@ export default function Home() {
                   width={36}
                 />
                 <Text as='span'>
-                  Call 555-555-5555
+                  Call 505-221-6337
                 </Text>
               </Button>
               <Text as='b' marginTop={2} textAlign='center'>
-                8 a.m. to 5 p.m. (MDT), Monday through Friday.
+                9 a.m. - 5 p.m. (MT), Monday - Friday
               </Text>
             </Stack>
           </Container>
@@ -261,10 +268,10 @@ export default function Home() {
             >
               <Box>
                 <Text marginTop={4}>
-                  We provide support and resources to folx having to cross borders due to abortion restrictions in order to receive care at VAG in Albuquerque, New Mexico, located on occupied Tiwa land.
+                  In October, we’ll prioritize and provide care for those who seek abortions later in pregnancy. Specifically, our goal is to increase access to third trimester abortion care since few clinics offer this service. We’ll also schedule appointments for first and second trimester abortion care based on availability.
                 </Text>
                 <Text marginTop={4}>
-                  Cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia. Itaque earum rerum hic tenetur a sapiente delectus. At vero eos et accusamus. Excepteur sint occaecat cupidatat non proident, sunt in culpa.
+                  Regardless of where you are in your pregnancy, we encourage you to call us. If we are not able to schedule your visit with us, we will share options with you so that you get the care you need.
                 </Text>
               </Box>
               <Image
@@ -328,24 +335,24 @@ export default function Home() {
               wrap='wrap'
             >
               <CardServices
-                body='upiditate non provident, similique sunt in culpa qui officia deserunt mollitia.'
+                body='Responsive, survivor-centered care - from low-intervention methods to surgical procedures'
                 height={100}
                 icon='/section-03-come-provide/moon@1x.png'
-                title='In Clinic Abortions'
+                title='In-clinic Abortions'
                 width={100}
               />
               <CardServices
-                body='upiditate non provident, similique sunt in culpa qui officia deserunt mollitia.'
+                body='Honoring spiritual well-being and healing practices when receiving care'
                 height={100}
                 icon='/section-03-come-provide/water@1x.png'
                 title='Spiritual Services'
                 width={210}
               />
               <CardServices
-                body='upiditate non provident, similique sunt in culpa qui officia deserunt mollitia.'
+                body='Nonjudgmental and compassionate care that holds space for emotional support'
                 height={100}
                 icon='/section-03-come-provide/eye@1x.png'
-                title='Grief Counseling'
+                title='Grief Support'
                 width={100}
               />
             </Flex>
@@ -373,7 +380,7 @@ export default function Home() {
               wrap='wrap'
             >
               <CardResources
-                body='ineedana.com is a comprehensive, regularly updated, and personalized resource for abortion seekers in the US.'
+                body='I Need An A is a comprehensive and personalized resource for abortion seekers that includes details to consider when arranging an abortion.'
                 height={81}
                 href='https://www.ineedana.com/'
                 icon="/section-04-resources/logo-ineeda@1x.png"
@@ -382,7 +389,7 @@ export default function Home() {
                 width={196}
               />
               <CardResources
-                body='The National Network of Abortion Funds (NNAF)is a network of 100 independent abortion funds. These member funds work to remove financial and logistical barriers to abortion access.'
+                body='The National Network of Abortion Funds is a network of 100 independent abortion funds that work with abortion seekers to help cover abortion costs and arrange for logistical support.'
                 height={75}
                 href='https://abortionfunds.org/find-a-fund/'
                 icon="/section-04-resources/logo-nnaf@1x.png"
@@ -391,10 +398,12 @@ export default function Home() {
                 width={277}
               />
               <CardResources
-                body='[explanation about resource]'
-                href='#FIXME'
+                body='Repro Legal Helpline provides free and confidential services including answering legal questions about abortion.'
+                href='https://www.reprolegalhelpline.org/'
+                icon={<MapIcon height={111} width={83} />}
                 linkText='View state laws'
-                title='Find out about abortion laws in your state'
+                svg
+                title='Find legal support'
               />
             </Flex>
           </Container>
@@ -427,8 +436,8 @@ export default function Home() {
               marginRight={0}
               position='absolute'
               sx={{
-                bottom: [0, 0, '-8%', '-16%'],
-                left: ['50%', '50%', '50%', '60%'],
+                bottom: [0, 0, '-18%', '-22%'],
+                left: ['50%', '50%', '50%', '70%'],
                 transform: 'translateX(68%) translateY(-26%)',
                 zIndex: 0,
               }}
@@ -451,7 +460,7 @@ export default function Home() {
                   Who is VAG?
                 </Heading>
                 <Text marginTop={4} maxWidth={['100%', '100%', 580, 780]}>
-                  We are a diverse group of abortion counselors and clinicians who came together to dismantle supremacy ideologies within health care while prioritizing support and accessibility needs for both patients and clinic staff.
+                  You know us as Valley Abortion Group or VAG. You’ll learn more about our name change in the coming months and, please know, that we’re keeping the acronym VAG. So, with opening of our doors to patient care, you’ll hear us say VAG Clinic when you call.
                 </Text>
                 <Hide above='md'>
                   <Center>
@@ -463,10 +472,7 @@ export default function Home() {
                   </Center>
                 </Hide>
                 <Text marginTop={4} maxWidth={['100%', '100%', 580, 780]}>
-                  Valley Abortion Group is the first Queer- and BIPOC-led, employee-directed abortion clinic focused on comprehensive abortion care. We are the fifth clinic in the country, and only clinic is the southwest, to provide abortion care in all stages of pregnancy.
-                </Text>
-                <Text marginTop={4} maxWidth={['100%', '100%', 580, 780]}>
-                  VAG providers care for patients using an anti-racist, survivor-centered and low-intervention delivery model that midwives have used for thousands of years. Lived experience, as well as  scientific evidence, inform our organizational structures, policies, practices, and attitudes, so that power is shared equitably, within our organization as well as with those we serve.
+                  VAG Clinic is the first Queer and BIPOC-led abortion clinic in Albuquerque, New Mexico, located on occupied Tiwa land. Our patient care follows an anti-racist, survivor-centered, and low-intervention delivery model that midwives have used for thousands of years. We believe in empowering patients by prioritizing their rights, safety, well-being, needs, and wishes. We welcome and support patients from other states and countries.
                 </Text>
                 <Hide above='md'>
                   <Center marginTop={4}>
@@ -527,13 +533,15 @@ export default function Home() {
             </Grid>
 
             <Text marginTop={4}>
-              [why folks should donate] Eaque ipsa quae ab illo inventore veritatis et quasi. Inventore  veritatis et quasi architecto beatae vitae dicta sunt explicabo. Esse  cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in  reprehenderit in voluptate velit.
+              We are so grateful for the support we have received to help us open VAG Clinic – thank you! Please continue to support us and our mission of providing accessible holistic abortion care to all.
             </Text>
             <Flex
               alignItems='center'
               direction={['column', 'row']}
             >
               <Button
+                as='a'
+                href='https://www.gofundme.com/f/help-valley-abortion-group-vag-open-in-2024'
                 marginY={8}
                 minW={220}
                 variant='brown'
@@ -562,6 +570,6 @@ export default function Home() {
         </Box>
         <Footer />
       </main>
-    </>
+    </Box>
   );
 }

@@ -33,16 +33,20 @@ export default function Footer() {
           >
             <Box fontSize={14} textAlign={['center', 'left']}>
               <Text as='b' fontSize={18}>Contact us</Text>
+              <Text>
+                Phone: 505-221-6337
+              </Text>
+              <br />
               <Text>VAG Clinic</Text>
+              <Text>
+                PO Box 25002
+              </Text>
               <Text>
                 Albuquerque, NM 87125
               </Text>
               <br />
               <Text>
-                Toll-free: 800-555-5555
-              </Text>
-              <Text>
-                Local: 555-555-5555
+                Our street address is shared after appointments are scheduled.
               </Text>
               <br />
               <Text as='b' fontSize={18}>
@@ -50,30 +54,30 @@ export default function Footer() {
               </Text>
               <HStack justifyContent='center'>
                 <Link
-                  href="#FIXME"
+                  href='https://x.com/valleyabortion'
                 >
                   <VisuallyHidden>
-                    Vag on X/Twitter
+                    VAG on X/Twitter
                   </VisuallyHidden>
                   <XTwitterIcon height={3} width={4} />
                 </Link>
                 <Link
-                  href="#FIXME"
+                  href='https://www.facebook.com/people/Valley-Abortion-Group-VAG/100089647541574/'
                 >
                   <VisuallyHidden>
-                    Vag on Facebook
+                    VAG on Facebook
                   </VisuallyHidden>
                   <FacebookIcon height={4} width={3} />
                 </Link>
                 <Link
-                  href="#FIXME"
+                  href='https://www.instagram.com/valleyabortiongroup/'
                 >
                   <VisuallyHidden>
-                    Vag on Instagram
+                    VAG on Instagram
                   </VisuallyHidden>
                   <InstagramIcon height={4} width={4} />
                 </Link>
-                <Text>@valleyabortiongroup</Text>
+                <Text>@vagclinic</Text>
               </HStack>
             </Box>
             <Center>
@@ -83,13 +87,14 @@ export default function Footer() {
           <Spacer />
           <Box fontSize={14}>
             <Text>
-              We’ve designed our website to protect your privacy by [doing something awesome].
+              VAG Clinic is made possible through the supporters of Valley Abortion Group (VAG), our community, and the commitment and contributions of our start-up team members.
             </Text>
-            <Text marginTop={2}>
-              We recommend you remove this site from your browser history and in the future use &quot;incognito&quot; or &quot;private&quot; browsing to look up information.
-            </Text>
-            <Text marginTop={2}>
-              To clear your browsing history in Google Chrome on Android, iPhone, or iPad, tap the three-dot menu icon &gt; Settings &gt; Privacy &gt; Clear Browsing Data.
+            <Text marginTop={8}>
+              We recommend you remove this site from your browser history and, in the future, use “incognito” or “private” browsing to look up information.  You can learn more about clearing your internet browsing history{' '}
+              <Link color='white !important' href='https://www.ineedana.com/privacy'>
+                here
+              </Link>
+              .
             </Text>
           </Box>
         </Stack>
@@ -118,7 +123,7 @@ export default function Footer() {
               marginTop={2}
             >
               <Text as='b'>
-                Call 555-555-5555{' '}
+                Call 505-221-6337{' '}
               </Text>
               <Text as='span'>
                 for abortion support

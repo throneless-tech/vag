@@ -24,11 +24,17 @@ export default function CardResources(props) {
         {props.body}
         {props.icon ? (
           <Center marginTop={4}>
-            <Image
-              height={props.height}
-              src={props.icon}
-              width={props.width}
+            {props.svg ? (
+              <>
+                {props.icon}
+              </>
+            ) : (
+                <Image
+              height = {props.height}
+            src={props.icon}
+            width={props.width}
             />
+            )}
           </Center>
         ) : null}
       </CardBody>

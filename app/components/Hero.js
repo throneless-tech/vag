@@ -68,6 +68,8 @@ export default function Hero() {
           marginTop={6}
         >
           <Button
+            as='a'
+            href='tel:+15052216337'
             marginLeft={['auto', 0]}
             marginRight={['auto', 0]}
             maxWidth={270}
@@ -82,7 +84,7 @@ export default function Hero() {
               width={36}
             />
             <Text as='span'>
-              Call 555-555-5555
+              Call 505-221-6337
             </Text>
           </Button>
           <Text

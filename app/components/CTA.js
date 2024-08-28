@@ -17,7 +17,7 @@ export default function CTA() {
       position='relative'
       zIndex={1}
     >
-      <Flex direction={['column', 'row']} gap='2px'>
+      <Flex direction={['column', 'row']} gap={0}>
         <Text
           bg='teal.300'
           color='white'
@@ -33,7 +33,13 @@ export default function CTA() {
         </Text>
         <Spacer />
         <Center>
-          <Button height='100%' width={270} paddingY={[2, 0]}>
+          <Button
+            as='a'
+            height='100%'
+            href='https://states.guttmacher.org/policies/'
+            paddingY={[2, 0]}
+            width={270}
+          >
             <Image
               height={29}
               paddingRight={1}
