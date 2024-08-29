@@ -73,7 +73,8 @@ export default function Home() {
             <Text paddingTop={4} maxWidth={[400, 600, 780, 780, 1200]}>
               To maintain your privacy, we are only scheduling appointments by phone.
               <br />
-              <Text as='b' paddingTop={2}>Call or text 505-221-6337, 8 a.m. to 5 p.m. (MDT), Monday through Friday.
+              <Text as='b' paddingTop={2}>
+                Call us at 505-221-6337, 9 a.m. to 5 p.m. (MT), Monday through Friday.
               </Text>
             </Text>
             <Center marginTop={6}>
@@ -383,27 +384,28 @@ export default function Home() {
                 body='I Need An A is a comprehensive and personalized resource for abortion seekers that includes details to consider when arranging an abortion.'
                 height={81}
                 href='https://www.ineedana.com/'
-                icon="/section-04-resources/logo-ineeda@1x.png"
+                icon='/section-04-resources/logo-ineeda@1x.png'
                 linkText='Go to ineedana.com'
                 title='Find abortion support near you'
                 width={196}
               />
               <CardResources
                 body='The National Network of Abortion Funds is a network of 100 independent abortion funds that work with abortion seekers to help cover abortion costs and arrange for logistical support.'
-                height={75}
+                height={175}
                 href='https://abortionfunds.org/find-a-fund/'
-                icon="/section-04-resources/logo-nnaf@1x.png"
+                icon='/section-04-resources/logo-nnaf@1x.png'
                 linkText='Go to NNAF'
                 title='Find an abortion fund'
-                width={277}
+                width={175}
               />
               <CardResources
                 body='Repro Legal Helpline provides free and confidential services including answering legal questions about abortion.'
+                height={130}
                 href='https://www.reprolegalhelpline.org/'
-                icon={<MapIcon height={111} width={83} />}
-                linkText='View state laws'
-                svg
+                icon='/section-04-resources/logo-repro-legal-helpline.png'
+                linkText='Go to Repro Legal Helpline'
                 title='Find legal support'
+                width={175}
               />
             </Flex>
           </Container>
@@ -472,7 +474,7 @@ export default function Home() {
                   </Center>
                 </Hide>
                 <Text marginTop={4} maxWidth={['100%', '100%', 580, 780]}>
-                  VAG Clinic is the first Queer and BIPOC-led abortion clinic in Albuquerque, New Mexico, located on occupied Tiwa land. Our patient care follows an anti-racist, survivor-centered, and low-intervention delivery model that midwives have used for thousands of years. We believe in empowering patients by prioritizing their rights, safety, well-being, needs, and wishes. We welcome and support patients from other states and countries.
+                  VAG Clinic is the first Queer and BIPOC-led abortion clinic in Albuquerque, New Mexico, located on traditional, unceded Tiwa territory. Our patient care follows an anti-racist, survivor-centered, and low-intervention delivery model that midwives have used for thousands of years. We believe in empowering patients by prioritizing their rights, safety, well-being, needs, and wishes. We welcome and support patients from other states and countries.
                 </Text>
                 <Hide above='md'>
                   <Center marginTop={4}>

@@ -17,6 +17,7 @@ import {
 import LogoFooter from '@/public/LogoFooter';
 import FacebookIcon from '@/public/icons/social/FacebookIcon';
 import InstagramIcon from '@/public/icons/social/InstagramIcon';
+import TikTokIcon from '@/public/icons/social/TikTokIcon';
 import XTwitterIcon from '@/public/icons/social/XTwitterIcon';
 
 export default function Footer() {
@@ -76,6 +77,15 @@ export default function Footer() {
                     VAG on Instagram
                   </VisuallyHidden>
                   <InstagramIcon height={4} width={4} />
+                </Link>
+                <Link
+                  href='https://www.tiktok.com/@valleyabortiongroup 
+'
+                >
+                  <VisuallyHidden>
+                    VAG on TikTok
+                  </VisuallyHidden>
+                  <TikTokIcon height={4} width={3} />
                 </Link>
                 <Text>@vagclinic</Text>
               </HStack>
