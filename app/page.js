@@ -66,7 +66,11 @@ export default function Home() {
               width={374}
             />
           </Box>
-          <Container color='white' maxW='container.xl' paddingY={6}>
+          <Container
+            color='white'
+            maxW={['container.xs', 'container.sm', 'container.md', 'container.lg', 'container.xl']}
+            paddingY={12}  
+          >
             <Heading as='h2' variant='h2'>
               Set up an Appointment
             </Heading>
@@ -226,7 +230,10 @@ export default function Home() {
           </Container>
         </Box>
         <Box>
-          <Container maxW='container.xl' paddingY={6}>
+          <Container
+            maxW={['container.xs', 'container.sm', 'container.md', 'container.lg', 'container.xl']}
+            paddingY={12}
+          >
             <Heading as='h2' color='teal.200' variant='h2'>
               Should you come to VAG Clinic?
             </Heading>
@@ -367,8 +374,8 @@ export default function Home() {
           zIndex={1}
         >
           <Container
-            maxW='container.xl'
-            paddingY={6}
+            maxW={['container.xs', 'container.sm', 'container.md', 'container.lg', 'container.xl']}
+            paddingY={12}
           >
             <Heading as='h2' variant='h2'>
               Other Abortion Resources
@@ -455,7 +462,10 @@ export default function Home() {
               />
             </Box>
           </Show>
-          <Container maxW='container.xl' paddingY={[6, 6, 10]}>
+          <Container
+            maxW={['container.xs', 'container.sm', 'container.md', 'container.lg', 'container.xl']}
+            paddingY={12}
+          >
             <Stack direction={['column', 'row']}>
               <Box>
                 <Heading as='h2' variant='h2'>
@@ -499,7 +509,10 @@ export default function Home() {
           </Container>
         </Box>
         <Box bg='teal.100' position='relative' zIndex={1}>
-          <Container maxW='container.xl' paddingY={6}>
+          <Container
+            maxW={['container.xs', 'container.sm', 'container.md', 'container.lg', 'container.xl']}
+            paddingY={12}
+          >
             <Grid
               alignItems='center'
               templateColumns='repeat(10, 1fr)'
@@ -513,7 +526,13 @@ export default function Home() {
                       width={320}
                     />
                   </Show>
-                  <Show above='lg'>
+                  <Show above='xl'>
+                    <Image
+                      height={4}
+                      marginLeft='-10px'
+                      src='/icons/line@1x.png'
+                      width={320}
+                    />
                     <Image
                       height={4}
                       marginLeft='-10px'
@@ -539,7 +558,7 @@ export default function Home() {
             </Text>
             <Flex
               alignItems='center'
-              direction={['column', 'row']}
+              direction={['column', 'column', 'row']}
             >
               <Button
                 as='a'

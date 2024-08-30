@@ -25,11 +25,11 @@ export default function Footer() {
     <Box bg='brown' color='white'>
       <Container maxW='container.xl' paddingY={6}>
         <Stack
-          direction={['column', 'row']}
+          direction={['column', 'column', 'row']}
           spacing={[2, 6]}
         >
           <Stack
-            direction={['column', 'row-reverse']}
+            direction={['column', 'column', 'row-reverse']}
             spacing={4}
           >
             <Box fontSize={14} textAlign={['center', 'left']}>
@@ -53,7 +53,7 @@ export default function Footer() {
               <Text as='b' fontSize={18}>
                 Follow us
               </Text>
-              <HStack justifyContent='center'>
+              <HStack justifyContent={['center', 'flex-start']}>
                 <Link
                   href='https://x.com/valleyabortion'
                 >
@@ -95,7 +95,7 @@ export default function Footer() {
             </Center>
           </Stack>
           <Spacer />
-          <Box fontSize={14}>
+          <Box fontSize={14} maxW={['100%', '100%', 500]}>
             <Text>
               VAG Clinic is made possible through the supporters of Valley Abortion Group (VAG), our community, and the commitment and contributions of our start-up team members.
             </Text>
