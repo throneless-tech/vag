@@ -43,7 +43,6 @@ export default function Home() {
       {/* <main className={styles.main}> */}
       <main>
         <Hero />
-        <CTA />
         <Box bg='red.500' position='relative'>
           <Box
             marginLeft='auto'
@@ -57,6 +56,7 @@ export default function Home() {
             }}
           >
             <Image
+              alt=''
               height={434}
               src='/section-02-appt/flower@1x.png'
               sx={{
@@ -69,7 +69,7 @@ export default function Home() {
           <Container
             color='white'
             maxW={['container.xs', 'container.sm', 'container.md', 'container.lg', 'container.xl']}
-            paddingY={12}  
+            paddingY={12}
           >
             <Heading as='h2' variant='h2'>
               Set up an Appointment
@@ -84,6 +84,7 @@ export default function Home() {
             <Center marginTop={6}>
               <Hide above='sm'>
                 <Image
+                  alt=''
                   height={5}
                   src='/icons/line@1x.png'
                   width={300}
@@ -181,12 +182,14 @@ export default function Home() {
             </List>
             <Center marginTop={6}>
               <Image
+                alt=''
                 height={5}
                 src='/icons/line@1x.png'
                 width={300}
               />
               <Show above='sm'>
                 <Image
+                  alt=''
                   height={5}
                   marginLeft='-1px'
                   src='/icons/line@1x.png'
@@ -211,6 +214,7 @@ export default function Home() {
                 width={274}
               >
                 <Image
+                  alt=''
                   height={26}
                   paddingRight={1}
                   src='/icons/icon-rainbow@1.png'
@@ -276,13 +280,14 @@ export default function Home() {
             >
               <Box>
                 <Text marginTop={4}>
-                  In October, we’ll prioritize and provide care for those who seek abortions later in pregnancy. Specifically, our goal is to increase access to third trimester abortion care since few clinics offer this service. We’ll also schedule appointments for first and second trimester abortion care based on availability.
+                  In October, people in their third trimester will be prioritized and we can offer trusted resources for those earlier in pregnancy.
                 </Text>
                 <Text marginTop={4}>
-                  Regardless of where you are in your pregnancy, we encourage you to call us. If we are not able to schedule your visit with us, we will share options with you so that you get the care you need.
+                  Regardless of where you are in your pregnancy, we encourage you to call us.  If we are not able to schedule your visit with us, we will share options with you so that you get the care you need.
                 </Text>
               </Box>
               <Image
+                alt=''
                 height={196}
                 src='/section-03-come-provide/jug@1x.png'
                 width={172}
@@ -296,17 +301,20 @@ export default function Home() {
                 <Show above='md'>
                   <HStack spacing={0}>
                     <Image
+                      alt=''
                       height={4}
                       src='/icons/line-teal@1x.png'
                       width={320}
                     />
                     <Image
+                      alt=''
                       height={4}
                       src='/icons/line-teal@1x.png'
                       width={320}
                     />
                     <Show above='lg'>
                       <Image
+                        alt=''
                         height={4}
                         src='/icons/line-teal@1x.png'
                         width={320}
@@ -314,6 +322,7 @@ export default function Home() {
                     </Show>
                     <Show above='xl'>
                       <Image
+                        alt=''
                         height={10}
                         marginLeft='-30px'
                         paddingTop={2}
@@ -378,7 +387,7 @@ export default function Home() {
             paddingY={12}
           >
             <Heading as='h2' variant='h2'>
-              Other Abortion Resources
+              Abortion Resources
             </Heading>
             <Flex
               direction='row'
@@ -417,6 +426,7 @@ export default function Home() {
             </Flex>
           </Container>
         </Box>
+        <CTA />
         <Box position='relative'>
           <Box
             marginLeft='auto'
@@ -430,6 +440,7 @@ export default function Home() {
             }}
           >
             <Image
+              alt=''
               height={434}
               src='/section-05-about/sun@1x.png'
               sx={{
@@ -452,6 +463,7 @@ export default function Home() {
               }}
             >
               <Image
+                alt=''
                 height={434}
                 src='/section-05-about/cactus@1x.png'
                 sx={{
@@ -472,11 +484,12 @@ export default function Home() {
                   Who is VAG?
                 </Heading>
                 <Text marginTop={4} maxWidth={['100%', '100%', 580, 780]}>
-                  You know us as Valley Abortion Group or VAG. You’ll learn more about our name change in the coming months and, please know, that we’re keeping the acronym VAG. So, with opening of our doors to patient care, you’ll hear us say VAG Clinic when you call.
+                  You know us as Valley Abortion Group or VAG. Our name is changing, and you’ll learn more about it in the coming months. Please know: We’re keeping the acronym VAG. With the opening of our doors to patient care, you’ll hear us say “VAG Clinic” when you call.
                 </Text>
                 <Hide above='md'>
                   <Center>
                     <Image
+                      alt=''
                       height={251}
                       src='/section-05-about/vag-01@1x.png'
                       width={287}
@@ -484,11 +497,12 @@ export default function Home() {
                   </Center>
                 </Hide>
                 <Text marginTop={4} maxWidth={['100%', '100%', 580, 780]}>
-                  VAG Clinic is the first Queer and BIPOC-led abortion clinic in Albuquerque, New Mexico, located on traditional, unceded Tiwa territory. Our patient care follows an anti-racist, survivor-centered, and low-intervention delivery model that midwives have used for thousands of years. We believe in empowering patients by prioritizing their rights, safety, well-being, needs, and wishes. We welcome and support patients from other states and countries.
+                  VAG Clinic is the first Queer and BIPOC-led abortion clinic in the country. We are located on traditional, unceded Tiwa territory, also known as Albuquerque, New Mexico. Our patient care follows an anti-racist and survivor-centered model. We believe in empowering patients by prioritizing their rights, safety, well-being, needs, and wishes. We welcome and support patients from other states and countries.
                 </Text>
                 <Hide above='md'>
                   <Center marginTop={4}>
                     <Image
+                      alt=''
                       height={142}
                       src='/section-05-about/vag-02@1x.png'
                       width={318}
@@ -499,6 +513,7 @@ export default function Home() {
               <Show above='md'>
                 <Box marginTop={[4, 4, 10, 0]}>
                   <Image
+                    alt=''
                     height={532}
                     src='/section-05-about/vag-03@1x.png'
                     width={354}
@@ -521,6 +536,7 @@ export default function Home() {
                 <HStack>
                   <Show above='md'>
                     <Image
+                      alt=''
                       height={4}
                       src='/icons/line@1x.png'
                       width={320}
@@ -528,12 +544,16 @@ export default function Home() {
                   </Show>
                   <Show above='xl'>
                     <Image
+                      alt=''
                       height={4}
                       marginLeft='-10px'
                       src='/icons/line@1x.png'
                       width={320}
                     />
+                  </Show>
+                  <Show above='2xl'>
                     <Image
+                      alt=''
                       height={4}
                       marginLeft='-10px'
                       src='/icons/line@1x.png'
@@ -556,6 +576,11 @@ export default function Home() {
             <Text marginTop={4}>
               We are so grateful for the support we have received to help us open VAG Clinic – thank you! Please continue to support us and our mission of providing accessible holistic abortion care to all.
             </Text>
+            <Text marginTop={4}>
+              <Text as='b'>
+                Your funding will be used to increase abortion access for patients!
+              </Text>
+            </Text>
             <Flex
               alignItems='center'
               direction={['column', 'column', 'row']}
@@ -568,6 +593,7 @@ export default function Home() {
                 variant='brown'
               >
                 <Image
+                  alt=''
                   height={27}
                   src='/icons/icon-heart@1.png'
                   width={30}
@@ -578,6 +604,7 @@ export default function Home() {
               </Button>
               <Spacer />
               <Image
+                alt=''
                 height={150}
                 src='/section-06-support/hand@1x.png'
                 sx={{

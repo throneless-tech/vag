@@ -86,6 +86,7 @@ export default function Header() {
               Quick Exit
             </Text>
             <Image
+              alt=''
               className={header.breathe}
               height={31}
               src='/icons/icon-flower@1.png'

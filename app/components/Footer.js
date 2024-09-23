@@ -101,7 +101,7 @@ export default function Footer() {
             </Text>
             <Text marginTop={8}>
               We recommend you remove this site from your browser history and, in the future, use “incognito” or “private” browsing to look up information.  You can learn more about clearing your internet browsing history{' '}
-              <Link color='white !important' href='https://www.ineedana.com/privacy'>
+              <Link color='white !important' href='https://www.ineedana.com/privacy' textDecoration='underline'>
                 here
               </Link>
               .
@@ -113,12 +113,14 @@ export default function Footer() {
             <Center>
               <HStack spacing={0}>
                 <Image
+                  alt=''
                   height={4}
                   src='/icons/line@1x.png'
                   width={320}
                 />
                 <Show above='sm'>
                   <Image
+                    alt=''
                     height={4}
                     src='/icons/line@1x.png'
                     width={320}
@@ -142,12 +144,14 @@ export default function Footer() {
             <Center>
               <HStack spacing={0}>
                 <Image
+                  alt=''
                   height={4}
                   src='/icons/line@1x.png'
                   width={320}
                 />
                 <Show above='sm'>
                   <Image
+                    alt=''
                     height={4}
                     src='/icons/line@1x.png'
                     width={320}

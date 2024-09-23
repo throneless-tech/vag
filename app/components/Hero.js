@@ -33,6 +33,7 @@ export default function Hero() {
         >
           Abortion is legal in New Mexico.
           <Image
+            alt=''
             display='block'
             height={7}
             marginLeft='auto'
@@ -75,6 +76,7 @@ export default function Hero() {
             maxWidth={270}
           >
             <Image
+              alt=''
               height={26}
               src='/icons/icon-rainbow@1.png'
               paddingRight={1}
@@ -109,6 +111,7 @@ export default function Hero() {
         // width={['86vw', '74vw', '38vw']}
       >
         <Image
+          alt=''
           height={340}
           src='/section-01-hero/mountains@1x.png'
           sx={{

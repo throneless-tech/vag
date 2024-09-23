@@ -29,7 +29,7 @@ export default function CTA() {
           textAlign={['left', 'right']}
           width='100%'
         >
-          Abortion is legal in many states; find out information for your state or a state near you.
+          Find information on abortion access for your state or a state near you.
         </Text>
         <Spacer />
         <Center>
@@ -41,6 +41,7 @@ export default function CTA() {
             width={270}
           >
             <Image
+              alt=''
               height={29}
               paddingRight={1}
               src='/icons/icon-swirl@1.png'

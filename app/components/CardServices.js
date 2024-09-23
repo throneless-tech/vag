@@ -20,6 +20,7 @@ export default function CardServices(props) {
         {props.icon ? (
           <Center>
             <Image
+              alt=''
               height={props.height}
               src={props.icon}
               width={props.width}

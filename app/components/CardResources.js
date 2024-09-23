@@ -13,7 +13,7 @@ import {
 } from '@chakra-ui/react';
 
 export default function CardResources(props) {
-  return(
+  return (
     <Card color='brown' width={400}>
       <CardHeader paddingBottom={0}>
         <Heading as='h3' fontSize={24} variant='h3'>
@@ -29,11 +29,12 @@ export default function CardResources(props) {
                 {props.icon}
               </>
             ) : (
-                <Image
-              height = {props.height}
-            src={props.icon}
-            width={props.width}
-            />
+              <Image
+                alt=''
+                height={props.height}
+                src={props.icon}
+                width={props.width}
+              />
             )}
           </Center>
         ) : null}
@@ -47,6 +48,7 @@ export default function CardResources(props) {
           width='100%'
         >
           <Image
+            alt=''
             height={26}
             src='/icons/icon-bird@1.png'
             width={21}
