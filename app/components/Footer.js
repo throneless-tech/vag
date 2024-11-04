@@ -44,7 +44,6 @@ export default function Footer() {
               <Link
                 color='white !important'
                 href='https://maps.app.goo.gl/QRVq8VvrcKUqMkUW8'
-                target='none'
                 textDecoration='underline'
               >
                 <Text>
