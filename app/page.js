@@ -78,7 +78,7 @@ export default function Home() {
               To maintain your privacy, we are only scheduling appointments by phone.
               <br />
               <Text as='b' paddingTop={2}>
-                Call us at 505-221-6337, 9 a.m. to 5 p.m. (MT), Monday through Friday.
+                Call us at 505-221-6337, 8:30 a.m. to 4:30 p.m. (MT), Monday through Friday.
               </Text>
             </Text>
             <Center marginTop={6}>
@@ -228,7 +228,7 @@ export default function Home() {
                 </Text>
               </Button>
               <Text as='b' marginTop={2} textAlign='center'>
-                9 a.m. - 5 p.m. (MT), Monday - Friday
+                8:30 a.m. - 4:30 p.m. (MT), Monday - Friday
               </Text>
             </Stack>
           </Container>
@@ -280,10 +280,7 @@ export default function Home() {
             >
               <Box>
                 <Text marginTop={4}>
-                  In October, people in their third trimester will be prioritized and we can offer trusted resources for those earlier in pregnancy.
-                </Text>
-                <Text marginTop={4}>
-                  Regardless of where you are in your pregnancy, we encourage you to call us.  If we are not able to schedule your visit with us, we will share options with you so that you get the care you need.
+                  We provide care across all trimesters and encourage you to call us.  If we are not able to schedule your visit with us, we will share options with you so that you get the care you need.
                 </Text>
               </Box>
               <Image

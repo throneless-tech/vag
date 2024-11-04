@@ -38,16 +38,31 @@ export default function Footer() {
                 Phone: 505-221-6337
               </Text>
               <br />
-              <Text>VAG Clinic</Text>
+              <Text>
+                Location:
+              </Text>
+              <Link
+                color='white !important'
+                href='https://maps.app.goo.gl/QRVq8VvrcKUqMkUW8'
+                target='none'
+                textDecoration='underline'
+              >
+                <Text>
+                  8120 La Mirada Pl NE
+                </Text>
+                <Text>
+                  Albuquerque, NM 87109
+                </Text>
+              </Link>
+              <br />
+              <Text>
+                Mailing address:
+              </Text>
               <Text>
                 PO Box 25002
               </Text>
               <Text>
                 Albuquerque, NM 87125
-              </Text>
-              <br />
-              <Text>
-                Our street address is shared after appointments are scheduled.
               </Text>
               <br />
               <Text as='b' fontSize={18}>
