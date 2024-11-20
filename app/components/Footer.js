@@ -101,7 +101,6 @@ export default function Footer() {
                   </VisuallyHidden>
                   <TikTokIcon height={4} width={3} />
                 </Link>
-                <Text>@vagclinic</Text>
               </HStack>
             </Box>
             <Center>

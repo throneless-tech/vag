@@ -276,10 +276,11 @@ export default function Home() {
               alignItems='center'
               direction={['column', 'row']}
               gap={6}
+              justifyContent='space-between'
               marginTop={6}
             >
               <Box>
-                <Text marginTop={4}>
+                <Text marginTop={4} maxW='2xl'>
                   We provide care across all trimesters and encourage you to call us.  If we are not able to schedule your visit with us, we will share options with you so that you get the care you need.
                 </Text>
               </Box>
@@ -292,6 +293,7 @@ export default function Home() {
             </Stack>
             <Grid
               alignItems='center'
+              justifyContent='flex-start'
               templateColumns='repeat(10, 1fr)'
             >
               <GridItem colSpan={[0, 0, 7]}>
@@ -309,7 +311,7 @@ export default function Home() {
                       src='/icons/line-teal@1x.png'
                       width={320}
                     />
-                    <Show above='lg'>
+                    <Show above='xl'>
                       <Image
                         alt=''
                         height={4}
@@ -317,7 +319,7 @@ export default function Home() {
                         width={320}
                       />
                     </Show>
-                    <Show above='xl'>
+                    <Show above='2xl'>
                       <Image
                         alt=''
                         height={10}
@@ -335,7 +337,7 @@ export default function Home() {
                   as='h2'
                   color='teal.200'
                   marginTop={[10, 6]}
-                  textAlign={['left', 'left', 'right']}
+                  textAlign={['left', 'left', 'center', 'right']}
                 >
                   We provide
                 </Heading>
@@ -584,7 +586,7 @@ export default function Home() {
             >
               <Button
                 as='a'
-                href='https://www.gofundme.com/f/help-valley-abortion-group-vag-open-in-2024'
+                href='https://givebutter.com/SupportVAG'
                 marginY={8}
                 minW={220}
                 variant='brown'
