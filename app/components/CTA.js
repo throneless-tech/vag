@@ -12,12 +12,16 @@ import {
 export default function CTA() {
   return (
     <Box
-      bg={['teal.300', 'yellow']}
+      bg='teal.300'
       padding={[4, 0]}
       position='relative'
       zIndex={1}
     >
-      <Flex direction={['column', 'row']} gap={0}>
+      <Flex
+        align='center'
+        direction={['column', 'row']}
+        gap={0}
+      >
         <Text
           bg='teal.300'
           color='white'
@@ -37,7 +41,7 @@ export default function CTA() {
             as='a'
             height='100%'
             href='https://states.guttmacher.org/policies/'
-            paddingY={[2, 0]}
+            paddingY={[2, 4]}
             width={270}
           >
             <Image

@@ -296,6 +296,15 @@ export default function Home() {
               justifyContent='flex-start'
               templateColumns='repeat(10, 1fr)'
             >
+              <GridItem colSpan={[10, 10, 3]}>
+                <Heading
+                  as='h2'
+                  color='teal.200'
+                  marginTop={[10, 6]}
+                >
+                  We provide
+                </Heading>
+              </GridItem>
               <GridItem colSpan={[0, 0, 7]}>
                 <Show above='md'>
                   <HStack spacing={0}>
@@ -331,16 +340,6 @@ export default function Home() {
                     </Show>
                   </HStack>
                 </Show>
-              </GridItem>
-              <GridItem colSpan={[10, 10, 3]}>
-                <Heading
-                  as='h2'
-                  color='teal.200'
-                  marginTop={[10, 6]}
-                  textAlign={['left', 'left', 'center', 'right']}
-                >
-                  We provide
-                </Heading>
               </GridItem>
             </Grid>
             <Flex
