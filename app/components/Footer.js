@@ -119,6 +119,14 @@ export default function Footer() {
               </Link>
               .
             </Text>
+            <Box marginTop={4}>
+              <Image
+                alt=''
+                height={16}
+                src='/acn-logo.png'
+                width={380}
+              />
+            </Box>
           </Box>
         </Stack>
         <Box>

@@ -585,7 +585,7 @@ export default function Home() {
             >
               <Button
                 as='a'
-                href='https://givebutter.com/SupportVAG'
+                href='https://givebutter.com/VAG'
                 marginY={8}
                 minW={220}
                 variant='brown'
