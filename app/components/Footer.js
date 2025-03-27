@@ -41,6 +41,12 @@ export default function Footer() {
               <Text>
                 Location:
               </Text>
+              <Text>
+                Valley Community Care
+              </Text>
+              <Text>
+                DBA VAG Clinic
+              </Text>
               <Link
                 color='white !important'
                 href='https://maps.app.goo.gl/QRVq8VvrcKUqMkUW8'
@@ -119,12 +125,13 @@ export default function Footer() {
               </Link>
               .
             </Text>
-            <Box marginTop={4}>
+            <Box height={100} marginTop={4} position='relative'>
               <Image
                 alt=''
-                height={16}
+                height={100}
                 src='/acn-logo.png'
-                width={380}
+                style={{ objectFit: 'contain' }}
+                width={400}
               />
             </Box>
           </Box>
